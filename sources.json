@@ -1,0 +1,41 @@
+{
+  "retention_days": 60,
+  "topics": [
+    {
+      "id": "ai",
+      "label": "AI News",
+      "kind": "daily_news_json",
+      "paths": [
+        "C:\\Users\\AI-PC-DEV\\Documents\\ai-news\\data",
+        "C:\\Users\\AI-PC-DEV\\Documents\\ai-news\\github-pages\\data",
+        "C:\\Users\\AI-PC-DEV\\Documents\\ai-news\\Document"
+      ]
+    },
+    {
+      "id": "gov",
+      "label": "Gov News",
+      "kind": "daily_news_json",
+      "paths": [
+        "C:\\Users\\AI-PC-DEV\\Documents\\Gov-News-GitHub\\gov-news-thailand\\data",
+        "C:\\Users\\AI-PC-DEV\\Documents\\Gov-News-GitHub\\github-pages\\data",
+        "C:\\Users\\AI-PC-DEV\\Documents\\Gov-News-GitHub\\Document"
+      ]
+    },
+    {
+      "id": "police",
+      "label": "Police",
+      "kind": "police_kit",
+      "paths": [
+        "C:\\Users\\AI-PC-DEV\\Documents\\police-news-intel-kit\\github-pages\\data"
+      ]
+    },
+    {
+      "id": "tech-law",
+      "label": "Tech Law",
+      "kind": "tech_law",
+      "paths": [
+        "C:\\Users\\AI-PC-DEV\\Documents\\tech-law-thailand\\data"
+      ]
+    }
+  ]
+}

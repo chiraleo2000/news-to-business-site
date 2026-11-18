@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta name="description" content="News to Business — รวมข่าว AI ภาครัฐ ตำรวจ และกฎหมายเทคโนโลยี เพื่อโอกาสทางธุรกิจ" />
+  <title>News to Business</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/site.css?v=20261118" />
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="wrap header-row">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <div class="brand-text">
+          <p class="brand-kicker">Daily intelligence for BD</p>
+          <h1>News to Business</h1>
+        </div>
+      </div>
+      <div class="header-meta">
+        <span class="meta-pill" id="syncStamp">กำลังโหลด…</span>
+        <span class="meta-pill" id="totalCount">— ข่าว</span>
+      </div>
+    </div>
+  </header>
+
+  <nav class="topic-tabs wrap" aria-label="หัวข้อข่าว">
+    <button type="button" class="topic-tab is-active" data-topic="all">ภาพรวม</button>
+    <button type="button" class="topic-tab" data-topic="ai">AI News</button>
+    <button type="button" class="topic-tab" data-topic="gov">Gov News</button>
+    <button type="button" class="topic-tab" data-topic="police">Police</button>
+    <button type="button" class="topic-tab" data-topic="tech-law">Tech Law</button>
+  </nav>
+
+  <section class="toolbar wrap">
+    <label class="field">
+      <span>ช่วงวัน</span>
+      <select id="rangeSelect">
+        <option value="1">วันนี้</option>
+        <option value="3" selected>3 วัน</option>
+        <option value="7">7 วัน</option>
+        <option value="14">14 วัน</option>
+        <option value="30">30 วัน</option>
+        <option value="all">ทั้งหมด</option>
+      </select>
+    </label>
+    <label class="field">
+      <span>ความเร่งด่วน</span>
+      <select id="urgencySelect">
+        <option value="all">ทั้งหมด</option>
+        <option value="high">High</option>
+        <option value="medium">Medium</option>
+        <option value="low">Low</option>
+      </select>
+    </label>
+    <label class="field grow">
+      <span>ค้นหา</span>
+      <input id="searchInput" type="search" placeholder="หัวข้อ หน่วยงาน แท็ก…" autocomplete="off" />
+    </label>
+    <p class="result-count" id="resultCount">0 รายการ</p>
+  </section>
+
+  <main class="wrap">
+    <section class="overview-strip" id="overviewStrip" hidden></section>
+    <section class="card-grid" id="cardGrid" aria-live="polite"></section>
+    <p class="empty" id="emptyMsg" hidden>ไม่พบข่าวในช่วงที่เลือก</p>
+  </main>
+
+  <dialog class="detail-dialog" id="detailDialog">
+    <form method="dialog" class="detail-sheet">
+      <header class="detail-head">
+        <p class="detail-topic" id="detailTopic"></p>
+        <button type="submit" class="detail-close" aria-label="ปิด">×</button>
+      </header>
+      <h2 id="detailTitle"></h2>
+      <p class="detail-meta" id="detailMeta"></p>
+      <div class="detail-body" id="detailBody"></div>
+      <p class="detail-link" id="detailLink"></p>
+    </form>
+  </dialog>
+
+  <footer class="site-footer wrap">
+    <p>รวมจาก ai-news · gov-news-thailand · police-news-intel-kit · tech-law-thailand — อัปเดตรายวันอัตโนมัติ</p>
+  </footer>
+
+  <script src="js/app.js?v=20261118"></script>
+</body>
+</html>

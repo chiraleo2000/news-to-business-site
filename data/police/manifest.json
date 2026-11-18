@@ -1,0 +1,655 @@
+{
+ "generated_at": "2026-11-18T09:25:50.149Z",
+ "schema_version": 1,
+ "default_range": "all",
+ "days": [
+  {
+   "date": "2026-11-18",
+   "status": "published",
+   "total": 33,
+   "crime_file": "2026-11-18_crime.json",
+   "downloads": [
+    {
+     "label": "PDF สรุปข่าว 2026-11-18",
+     "path": "downloads/2026-11-18_crime.pdf",
+     "kind": "pdf"
+    },
+    {
+     "label": "Infographic 2026-11-18",
+     "path": "downloads/2026-11-18_infographic.png",
+     "kind": "image"
+    },
+    {
+     "label": "PDF ข่าวไซเบอร์ 2026-11-18",
+     "path": "downloads/2026-11-18_cyber.pdf",
+     "kind": "pdf"
+    },
+    {
+     "label": "Infographic ไซเบอร์ 2026-11-18",
+     "path": "downloads/2026-11-18_infographic_cyber.png",
+     "kind": "image"
+    }
+   ],
+   "cyber_file": "2026-11-18_cyber.json"
+  },
+  {
+   "date": "2026-11-17",
+   "status": "published",
+   "total": 21,
+   "crime_file": "2026-11-17_crime.json",
+   "downloads": [
+    {
+     "label": "PDF สรุปข่าว 2026-11-17",
+     "path": "downloads/2026-11-17_crime.pdf",
+     "kind": "pdf"
+    },
+    {
+     "label": "Infographic 2026-11-17",
+     "path": "downloads/2026-11-17_infographic.png",
+     "kind": "image"
+    },
+    {
+     "label": "PDF ข่าวไซเบอร์ 2026-11-17",
+     "path": "downloads/2026-11-17_cyber.pdf",
+     "kind": "pdf"
+    },
+    {
+     "label": "Infographic ไซเบอร์ 2026-11-17",
+     "path": "downloads/2026-11-17_infographic_cyber.png",
+     "kind": "image"
+    }
+   ],
+   "cyber_file": "2026-11-17_cyber.json"
+  },
+  {
+   "date": "2026-11-16",
+   "status": "published",
+   "total": 18,
+   "crime_file": "2026-11-16_crime.json",
+   "downloads": [
+    {
+     "label": "PDF สรุปข่าว 2026-11-16",
+     "path": "downloads/2026-11-16_crime.pdf",
+     "kind": "pdf"
+    },
+    {
+     "label": "Infographic 2026-11-16",
+     "path": "downloads/2026-11-16_infographic.png",
+     "kind": "image"
+    },
+    {
+     "label": "PDF ข่าวไซเบอร์ 2026-11-16",
+     "path": "downloads/2026-11-16_cyber.pdf",
+     "kind": "pdf"
+    },
+    {
+     "label": "Infographic ไซเบอร์ 2026-11-16",
+     "path": "downloads/2026-11-16_infographic_cyber.png",
+     "kind": "image"
+    }
+   ],
+   "cyber_file": "2026-11-16_cyber.json"
+  },
+  {
+   "date": "2026-11-15",
+   "status": "published",
+   "total": 26,
+   "crime_file": "2026-11-15_crime.json",
+   "downloads": [
+    {
+     "label": "PDF สรุปข่าว 2026-11-15",
+     "path": "downloads/2026-11-15_crime.pdf",
+     "kind": "pdf"
+    },
+    {
+     "label": "Infographic 2026-11-15",
+     "path": "downloads/2026-11-15_infographic.png",
+     "kind": "image"
+    },
+    {
+     "label": "PDF ข่าวไซเบอร์ 2026-11-15",
+     "path": "downloads/2026-11-15_cyber.pdf",
+     "kind": "pdf"
+    },
+    {
+     "label": "Infographic ไซเบอร์ 2026-11-15",
+     "path": "downloads/2026-11-15_infographic_cyber.png",
+     "kind": "image"
+    }
+   ],
+   "cyber_file": "2026-11-15_cyber.json"
+  },
+  {
+   "date": "2026-11-14",
+   "status": "published",
+   "total": 29,
+   "crime_file": "2026-11-14_crime.json",
+   "downloads": [
+    {
+     "label": "PDF สรุปข่าว 2026-11-14",
+     "path": "downloads/2026-11-14_crime.pdf",
+     "kind": "pdf"
+    },
+    {
+     "label": "Infographic 2026-11-14",
+     "path": "downloads/2026-11-14_infographic.png",
+     "kind": "image"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-13",
+   "status": "published",
+   "total": 23,
+   "crime_file": "2026-11-13_crime.json",
+   "downloads": [
+    {
+     "label": "PDF สรุปข่าว 2026-11-13",
+     "path": "downloads/2026-11-13_crime.pdf",
+     "kind": "pdf"
+    },
+    {
+     "label": "Infographic 2026-11-13",
+     "path": "downloads/2026-11-13_infographic.png",
+     "kind": "image"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-12",
+   "status": "published",
+   "total": 30,
+   "crime_file": "2026-11-12_crime.json",
+   "downloads": [
+    {
+     "label": "PDF สรุปข่าว 2026-11-12",
+     "path": "downloads/2026-11-12_crime.pdf",
+     "kind": "pdf"
+    },
+    {
+     "label": "PDF จาก LINE 2026-11-12",
+     "path": "downloads/2026-11-12_crime_line.pdf",
+     "kind": "pdf"
+    },
+    {
+     "label": "Infographic 2026-11-12",
+     "path": "downloads/2026-11-12_infographic.png",
+     "kind": "image"
+    },
+    {
+     "label": "Infographic LINE 2026-11-12",
+     "path": "downloads/2026-11-12_infographic_line.png",
+     "kind": "image"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-11",
+   "status": "published",
+   "total": 31,
+   "crime_file": "2026-11-11_crime.json",
+   "downloads": [
+    {
+     "label": "PDF สรุปข่าว 2026-11-11",
+     "path": "downloads/2026-11-11_crime.pdf",
+     "kind": "pdf"
+    },
+    {
+     "label": "PDF จาก LINE 2026-11-11",
+     "path": "downloads/2026-11-11_crime_line.pdf",
+     "kind": "pdf"
+    },
+    {
+     "label": "Infographic 2026-11-11",
+     "path": "downloads/2026-11-11_infographic.png",
+     "kind": "image"
+    },
+    {
+     "label": "Infographic LINE 2026-11-11",
+     "path": "downloads/2026-11-11_infographic_line.png",
+     "kind": "image"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-10",
+   "status": "published",
+   "total": 27,
+   "crime_file": "2026-11-10_crime.json",
+   "downloads": [
+    {
+     "label": "PDF สรุปข่าว 2026-11-10",
+     "path": "downloads/2026-11-10_crime.pdf",
+     "kind": "pdf"
+    },
+    {
+     "label": "Infographic 2026-11-10",
+     "path": "downloads/2026-11-10_infographic.png",
+     "kind": "image"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-09",
+   "status": "published",
+   "total": 31,
+   "crime_file": "2026-11-09_crime.json",
+   "downloads": [
+    {
+     "label": "PDF สรุปข่าว 2026-11-09",
+     "path": "downloads/2026-11-09_crime.pdf",
+     "kind": "pdf"
+    },
+    {
+     "label": "PDF จาก LINE 2026-11-09",
+     "path": "downloads/2026-11-09_crime_line.pdf",
+     "kind": "pdf"
+    },
+    {
+     "label": "Infographic 2026-11-09",
+     "path": "downloads/2026-11-09_infographic.png",
+     "kind": "image"
+    },
+    {
+     "label": "Infographic LINE 2026-11-09",
+     "path": "downloads/2026-11-09_infographic_line.png",
+     "kind": "image"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-08",
+   "status": "published",
+   "total": 21,
+   "crime_file": "2026-11-08_crime.json",
+   "downloads": [
+    {
+     "label": "PDF สรุปข่าว 2026-11-08",
+     "path": "downloads/2026-11-08_crime.pdf",
+     "kind": "pdf"
+    },
+    {
+     "label": "Infographic 2026-11-08",
+     "path": "downloads/2026-11-08_infographic.png",
+     "kind": "image"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-07",
+   "status": "published",
+   "total": 23,
+   "crime_file": "2026-11-07_crime.json",
+   "downloads": [
+    {
+     "label": "PDF สรุปข่าว 2026-11-07",
+     "path": "downloads/2026-11-07_crime.pdf",
+     "kind": "pdf"
+    },
+    {
+     "label": "Infographic 2026-11-07",
+     "path": "downloads/2026-11-07_infographic.png",
+     "kind": "image"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-06",
+   "status": "published",
+   "total": 23,
+   "crime_file": "2026-11-06_crime.json",
+   "downloads": [
+    {
+     "label": "PDF สรุปข่าว 2026-11-06",
+     "path": "downloads/2026-11-06_crime.pdf",
+     "kind": "pdf"
+    },
+    {
+     "label": "Infographic 2026-11-06",
+     "path": "downloads/2026-11-06_infographic.png",
+     "kind": "image"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-05",
+   "status": "published",
+   "total": 37,
+   "crime_file": "2026-11-05_crime.json",
+   "downloads": [
+    {
+     "label": "PDF สรุปข่าว 2026-11-05",
+     "path": "downloads/2026-11-05_crime.pdf",
+     "kind": "pdf"
+    },
+    {
+     "label": "Infographic 2026-11-05",
+     "path": "downloads/2026-11-05_infographic.png",
+     "kind": "image"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-04",
+   "status": "published",
+   "total": 19,
+   "crime_file": "2026-11-04_crime.json",
+   "downloads": [
+    {
+     "label": "PDF สรุปข่าว 2026-11-04",
+     "path": "downloads/2026-11-04_crime.pdf",
+     "kind": "pdf"
+    },
+    {
+     "label": "PDF จาก LINE 2026-11-04",
+     "path": "downloads/2026-11-04_crime_line.pdf",
+     "kind": "pdf"
+    },
+    {
+     "label": "Infographic 2026-11-04",
+     "path": "downloads/2026-11-04_infographic.png",
+     "kind": "image"
+    },
+    {
+     "label": "Infographic LINE 2026-11-04",
+     "path": "downloads/2026-11-04_infographic_line.png",
+     "kind": "image"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-03",
+   "status": "published",
+   "total": 29,
+   "crime_file": "2026-11-03_crime.json",
+   "downloads": [
+    {
+     "label": "PDF สรุปข่าว 2026-11-03",
+     "path": "downloads/2026-11-03_crime.pdf",
+     "kind": "pdf"
+    },
+    {
+     "label": "PDF จาก LINE 2026-11-03",
+     "path": "downloads/2026-11-03_crime_line.pdf",
+     "kind": "pdf"
+    },
+    {
+     "label": "Infographic 2026-11-03",
+     "path": "downloads/2026-11-03_infographic.png",
+     "kind": "image"
+    },
+    {
+     "label": "Infographic LINE 2026-11-03",
+     "path": "downloads/2026-11-03_infographic_line.png",
+     "kind": "image"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-02",
+   "status": "published",
+   "total": 19,
+   "crime_file": "2026-11-02_crime.json",
+   "downloads": [
+    {
+     "label": "PDF สรุปข่าว 2026-11-02",
+     "path": "downloads/2026-11-02_crime.pdf",
+     "kind": "pdf"
+    },
+    {
+     "label": "PDF จาก LINE 2026-11-02",
+     "path": "downloads/2026-11-02_crime_line.pdf",
+     "kind": "pdf"
+    },
+    {
+     "label": "Infographic 2026-11-02",
+     "path": "downloads/2026-11-02_infographic.png",
+     "kind": "image"
+    },
+    {
+     "label": "Infographic LINE 2026-11-02",
+     "path": "downloads/2026-11-02_infographic_line.png",
+     "kind": "image"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-01",
+   "status": "published",
+   "total": 19,
+   "crime_file": "2026-11-01_crime.json",
+   "downloads": [
+    {
+     "label": "PDF สรุปข่าว 2026-11-01",
+     "path": "downloads/2026-11-01_crime.pdf",
+     "kind": "pdf"
+    },
+    {
+     "label": "Infographic 2026-11-01",
+     "path": "downloads/2026-11-01_infographic.png",
+     "kind": "image"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-31",
+   "status": "published",
+   "total": 26,
+   "crime_file": "2026-10-31_crime.json",
+   "downloads": [
+    {
+     "label": "PDF สรุปข่าว 2026-10-31",
+     "path": "downloads/2026-10-31_crime.pdf",
+     "kind": "pdf"
+    },
+    {
+     "label": "Infographic 2026-10-31",
+     "path": "downloads/2026-10-31_infographic.png",
+     "kind": "image"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-30",
+   "status": "published",
+   "total": 22,
+   "crime_file": "2026-10-30_crime.json",
+   "downloads": [
+    {
+     "label": "PDF สรุปข่าว 2026-10-30",
+     "path": "downloads/2026-10-30_crime.pdf",
+     "kind": "pdf"
+    },
+    {
+     "label": "Infographic 2026-10-30",
+     "path": "downloads/2026-10-30_infographic.png",
+     "kind": "image"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-29",
+   "status": "published",
+   "total": 38,
+   "crime_file": "2026-10-29_crime.json",
+   "downloads": [
+    {
+     "label": "PDF สรุปข่าว 2026-10-29",
+     "path": "downloads/2026-10-29_crime.pdf",
+     "kind": "pdf"
+    },
+    {
+     "label": "PDF จาก LINE 2026-10-29",
+     "path": "downloads/2026-10-29_crime_line.pdf",
+     "kind": "pdf"
+    },
+    {
+     "label": "Infographic 2026-10-29",
+     "path": "downloads/2026-10-29_infographic.png",
+     "kind": "image"
+    },
+    {
+     "label": "Infographic LINE 2026-10-29",
+     "path": "downloads/2026-10-29_infographic_line.png",
+     "kind": "image"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-28",
+   "status": "published",
+   "total": 16,
+   "crime_file": "2026-10-28_crime.json",
+   "downloads": [
+    {
+     "label": "PDF สรุปข่าว 2026-10-28",
+     "path": "downloads/2026-10-28_crime.pdf",
+     "kind": "pdf"
+    },
+    {
+     "label": "Infographic 2026-10-28",
+     "path": "downloads/2026-10-28_infographic.png",
+     "kind": "image"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-27",
+   "status": "published",
+   "total": 27,
+   "crime_file": "2026-10-27_crime.json",
+   "downloads": [
+    {
+     "label": "PDF สรุปข่าว 2026-10-27",
+     "path": "downloads/2026-10-27_crime.pdf",
+     "kind": "pdf"
+    },
+    {
+     "label": "PDF จาก LINE 2026-10-27",
+     "path": "downloads/2026-10-27_crime_line.pdf",
+     "kind": "pdf"
+    },
+    {
+     "label": "Infographic 2026-10-27",
+     "path": "downloads/2026-10-27_infographic.png",
+     "kind": "image"
+    },
+    {
+     "label": "Infographic LINE 2026-10-27",
+     "path": "downloads/2026-10-27_infographic_line.png",
+     "kind": "image"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-26",
+   "status": "published",
+   "total": 24,
+   "crime_file": "2026-10-26_crime.json",
+   "downloads": [
+    {
+     "label": "PDF สรุปข่าว 2026-10-26",
+     "path": "downloads/2026-10-26_crime.pdf",
+     "kind": "pdf"
+    },
+    {
+     "label": "PDF จาก LINE 2026-10-26",
+     "path": "downloads/2026-10-26_crime_line.pdf",
+     "kind": "pdf"
+    },
+    {
+     "label": "Infographic 2026-10-26",
+     "path": "downloads/2026-10-26_infographic.png",
+     "kind": "image"
+    },
+    {
+     "label": "Infographic LINE 2026-10-26",
+     "path": "downloads/2026-10-26_infographic_line.png",
+     "kind": "image"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-25",
+   "status": "published",
+   "total": 23,
+   "crime_file": "2026-10-25_crime.json",
+   "downloads": [
+    {
+     "label": "PDF สรุปข่าว 2026-10-25",
+     "path": "downloads/2026-10-25_crime.pdf",
+     "kind": "pdf"
+    },
+    {
+     "label": "Infographic 2026-10-25",
+     "path": "downloads/2026-10-25_infographic.png",
+     "kind": "image"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-24",
+   "status": "published",
+   "total": 32,
+   "crime_file": "2026-10-24_crime.json",
+   "downloads": [
+    {
+     "label": "PDF สรุปข่าว 2026-10-24",
+     "path": "downloads/2026-10-24_crime.pdf",
+     "kind": "pdf"
+    },
+    {
+     "label": "Infographic 2026-10-24",
+     "path": "downloads/2026-10-24_infographic.png",
+     "kind": "image"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-23",
+   "status": "published",
+   "total": 56,
+   "crime_file": "2026-10-23_crime.json",
+   "downloads": [
+    {
+     "label": "PDF สรุปข่าว 2026-10-23",
+     "path": "downloads/2026-10-23_crime.pdf",
+     "kind": "pdf"
+    },
+    {
+     "label": "Infographic 2026-10-23",
+     "path": "downloads/2026-10-23_infographic.png",
+     "kind": "image"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-22",
+   "status": "published",
+   "total": 49,
+   "crime_file": "2026-10-22_crime.json",
+   "downloads": [
+    {
+     "label": "PDF สรุปข่าว 2026-10-22",
+     "path": "downloads/2026-10-22_crime.pdf",
+     "kind": "pdf"
+    },
+    {
+     "label": "PDF จาก LINE 2026-10-22",
+     "path": "downloads/2026-10-22_crime_line.pdf",
+     "kind": "pdf"
+    },
+    {
+     "label": "Infographic 2026-10-22",
+     "path": "downloads/2026-10-22_infographic.png",
+     "kind": "image"
+    },
+    {
+     "label": "Infographic LINE 2026-10-22",
+     "path": "downloads/2026-10-22_infographic_line.png",
+     "kind": "image"
+    }
+   ]
+  }
+ ]
+}
