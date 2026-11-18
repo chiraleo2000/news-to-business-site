@@ -1,8 +1,8 @@
 /**
  * Boot Police GraphRAG + chat + connect on news-to-business-site.
+ * Single graph view only (no separate cyber graph tab).
  */
 (() => {
-  const CYBER_TOPIC = "อาชญากรรมไซเบอร์และออนไลน์";
   const els = {
     tabs: Array.from(document.querySelectorAll("[data-police-tab]")),
     viewBrain: document.getElementById("view-brain"),
@@ -22,7 +22,7 @@
   }
 
   function setTab(tab) {
-    const isBrain = tab === "brain" || tab === "cyber-brain";
+    const isBrain = tab === "brain";
     const isConnect = tab === "connect";
     els.tabs.forEach((btn) => {
       btn.classList.toggle("is-active", btn.dataset.policeTab === tab);
@@ -32,35 +32,24 @@
     document.body.classList.toggle("is-brain", isBrain);
     const main = document.getElementById("main");
     if (main) main.classList.toggle("main-brain", isBrain);
-
     if (isBrain) {
-      const cyber = tab === "cyber-brain";
-      if (els.title) els.title.textContent = cyber ? "กราฟไซเบอร์" : "ข้อมูลกราฟ";
-      if (els.kicker) {
-        els.kicker.textContent = cyber
-          ? "GraphRAG · อาชญากรรมไซเบอร์และออนไลน์"
-          : "Obsidian → knowledge graph";
-      }
+      if (els.title) els.title.textContent = "ข้อมูลกราฟ";
+      if (els.kicker) els.kicker.textContent = "Obsidian → knowledge graph";
     }
   }
 
-  async function showBrain(tab) {
-    setTab(tab);
-    const cyber = tab === "cyber-brain";
-    setStatus(cyber ? "กำลังโหลดกราฟไซเบอร์…" : "กำลังโหลดข้อมูลกราฟ…");
+  async function showBrain() {
+    setTab("brain");
+    setStatus("กำลังโหลดข้อมูลกราฟ…");
     try {
       if (window.BrainGraph) {
-        await window.BrainGraph.show({
-          crimeType: cyber ? CYBER_TOPIC : "",
-          mode: cyber ? "cyber" : "all",
-        });
+        await window.BrainGraph.show({ crimeType: "", mode: "all" });
       }
       if (window.GraphRag) {
-        window.GraphRag.setMode?.(cyber ? "cyber" : "all");
-        // Clear override so rag.js loads data/police/feed.json
+        window.GraphRag.setMode?.("all");
         window.GraphRag.setPosts?.([]);
       }
-      setStatus(cyber ? "กราฟไซเบอร์ · GraphRAG พร้อมถาม" : "ข้อมูลกราฟ · GraphRAG พร้อมถาม");
+      setStatus("ข้อมูลกราฟ · GraphRAG พร้อมถาม");
     } catch (err) {
       setStatus(`โหลดกราฟไม่สำเร็จ: ${err.message || err}`);
     }
@@ -126,14 +115,13 @@
           setStatus("หน้าเชื่อมต่อ LLM / MCP");
           return;
         }
-        await showBrain(tab);
+        await showBrain();
       });
     });
   }
 
   function tabFromHash() {
     const raw = (location.hash || "").replace(/^#\/?/, "").toLowerCase();
-    if (raw.startsWith("cyber")) return "cyber-brain";
     if (raw.startsWith("connect")) return "connect";
     return "brain";
   }
@@ -149,16 +137,15 @@
       await refreshConnectPanel();
       setStatus("หน้าเชื่อมต่อ LLM / MCP");
     } else {
-      await showBrain(tab);
+      await showBrain();
       await refreshConnectPanel();
     }
     window.addEventListener("hashchange", () => {
-      const next = tabFromHash();
-      if (next === "connect") {
+      if (tabFromHash() === "connect") {
         setTab("connect");
         void refreshConnectPanel();
       } else {
-        void showBrain(next);
+        void showBrain();
       }
     });
   }

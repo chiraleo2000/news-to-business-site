@@ -267,7 +267,24 @@ function Sync-PoliceTopic {
             }
         }
 
-    Write-Log ("[police] copied={0} posts={1}" -f $copied, $Stats['police'])
+    Get-ChildItem -LiteralPath $destDir -Filter '*_cyber.json' -File -ErrorAction SilentlyContinue |
+        Sort-Object Name -Descending |
+        ForEach-Object {
+            if ($_.Name -notmatch '^(\d{4}-\d{2}-\d{2})_cyber\.json$') { return }
+            $day = $Matches[1]
+            try {
+                $json = Get-Content -LiteralPath $_.FullName -Raw -Encoding UTF8 | ConvertFrom-Json
+                $posts = @($json.posts)
+                foreach ($post in $posts) {
+                    $FeedItems.Add((ConvertTo-FeedItem -TopicId 'police-cyber' -Day $day -Post $post))
+                }
+                $Stats['police-cyber'] = [int]$Stats['police-cyber'] + $posts.Count
+            } catch {
+                Write-Log ("WARN: police-cyber parse {0}: {1}" -f $_.Name, $_.Exception.Message)
+            }
+        }
+
+    Write-Log ("[police] copied={0} crime_posts={1} cyber_posts={2}" -f $copied, $Stats['police'], $Stats['police-cyber'])
 }
 
 function Sync-TechLawTopic {
@@ -333,7 +350,7 @@ Write-Log ("RetentionDays={0} FullHistory={1} Cutoff={2:yyyy-MM-dd}" -f $keepDay
 
 Ensure-Dir $DataRoot
 $feedItems = New-Object 'System.Collections.Generic.List[object]'
-$stats = @{ ai = 0; gov = 0; police = 0; 'tech-law' = 0 }
+$stats = @{ ai = 0; gov = 0; police = 0; 'police-cyber' = 0; 'tech-law' = 0 }
 
 foreach ($topic in $config.topics) {
     switch ($topic.kind) {

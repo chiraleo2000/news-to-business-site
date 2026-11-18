@@ -33,6 +33,7 @@ news-to-business-site/
 ## Police GraphRAG / chat
 
 - Live: `https://chiraleo2000.github.io/news-to-business-site/police-intel.html`
+- Main site tab **ข่าวอาชญากรรมไซเบอร์** shows cyber news cards (no separate cyber graph).
 - Chat uses in-browser GraphRAG + Gemma via `data/police/tunnel.json` (same as police-news-intel-kit).
 - If the tunnel expires, open **เชื่อมต่อ LLM** and paste a fresh `https://….ngrok-free.app` base.
 

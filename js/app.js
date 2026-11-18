@@ -3,6 +3,7 @@
     ai: "AI News",
     gov: "Gov News",
     police: "Police",
+    "police-cyber": "ข่าวอาชญากรรมไซเบอร์",
     "tech-law": "Tech Law",
   };
 
@@ -31,7 +32,6 @@
     detailMeta: document.getElementById("detailMeta"),
     detailBody: document.getElementById("detailBody"),
     detailLink: document.getElementById("detailLink"),
-    policeTools: document.getElementById("policeTools"),
   };
 
   function escapeHtml(value) {
@@ -111,7 +111,7 @@
       els.overviewStrip.innerHTML = "";
       return;
     }
-    const counts = { ai: 0, gov: 0, police: 0, "tech-law": 0 };
+    const counts = { ai: 0, gov: 0, police: 0, "police-cyber": 0, "tech-law": 0 };
     for (const item of items) {
       if (counts[item.topic] != null) counts[item.topic] += 1;
     }
@@ -179,15 +179,14 @@
 
   function paint() {
     const items = filteredItems();
-    if (els.policeTools) els.policeTools.hidden = state.topic !== "police";
     renderOverview(items);
     renderCards(items);
   }
 
   function bind() {
-    document.querySelectorAll(".topic-tab").forEach((btn) => {
+    document.querySelectorAll(".topic-tab[data-topic]").forEach((btn) => {
       btn.addEventListener("click", () => {
-        document.querySelectorAll(".topic-tab").forEach((b) => b.classList.toggle("is-active", b === btn));
+        document.querySelectorAll(".topic-tab[data-topic]").forEach((b) => b.classList.toggle("is-active", b === btn));
         state.topic = btn.dataset.topic;
         paint();
       });
@@ -197,7 +196,7 @@
       const card = event.target.closest(".overview-card");
       if (!card) return;
       state.topic = card.dataset.topic;
-      document.querySelectorAll(".topic-tab").forEach((b) => {
+      document.querySelectorAll(".topic-tab[data-topic]").forEach((b) => {
         b.classList.toggle("is-active", b.dataset.topic === state.topic);
       });
       paint();
