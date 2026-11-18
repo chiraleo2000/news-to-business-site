@@ -1,0 +1,40 @@
+{
+ "case_id": "20261025-drug-04",
+ "title": "บช.ปส. สกัดรถกระบะซ่อนยาบ้า 924,000 เม็ดที่พัทลุง สองสามีภรรยาผู้ต้องหาอุ้มทารกพรางตา; ชัยภูมิจับหญิงวัย 18 ปี ข้อหาเสนอสินบน 1 แสนบาท",
+ "generated_at": "2026-11-09T04:33:32.610Z",
+ "node_count": 6,
+ "edge_count": 5,
+ "relations": [
+  {
+   "label": "จับโดย",
+   "target_id": "30_Entities/Units/บช.ปส.",
+   "target_title": "บช.ปส.",
+   "direction": "out"
+  },
+  {
+   "label": "จับโดย",
+   "target_id": "30_Entities/Units/ฝ่ายปกครอง อ.แก้งคร้อ",
+   "target_title": "ฝ่ายปกครอง อ.แก้งคร้อ",
+   "direction": "out"
+  },
+  {
+   "label": "จับโดย",
+   "target_id": "30_Entities/Units/สภ.แก้งคร้อ",
+   "target_title": "สภ.แก้งคร้อ",
+   "direction": "out"
+  },
+  {
+   "label": "จับโดย",
+   "target_id": "30_Entities/Units/สภ.นาขยาด",
+   "target_title": "สภ.นาขยาด",
+   "direction": "out"
+  },
+  {
+   "label": "ประเภท",
+   "target_id": "40_CrimeTypes/ยาเสพติด",
+   "target_title": "ยาเสพติด",
+   "direction": "out"
+  }
+ ],
+ "svg": "graphs/20261025-drug-04.svg"
+}

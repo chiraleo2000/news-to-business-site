@@ -1,0 +1,22 @@
+{
+ "case_id": "20261029-cyber-03",
+ "title": "ThaiCERT เตือนช่องโหว่ CVE-2026-80097 ใน Microsoft Authenticator บน Android เสี่ยงแอปอันตรายแอบอ้างขอ Token บัญชีองค์กร ให้อัปเดตเป็นเวอร์ชัน 6.2606.4246 ขึ้นไป",
+ "generated_at": "2026-11-09T04:33:34.664Z",
+ "node_count": 3,
+ "edge_count": 2,
+ "relations": [
+  {
+   "label": "สั่งการโดย",
+   "target_id": "30_Entities/Units/ThaiCERT",
+   "target_title": "ThaiCERT",
+   "direction": "out"
+  },
+  {
+   "label": "ประเภท",
+   "target_id": "40_CrimeTypes/อาชญากรรมไซเบอร์และออนไลน์",
+   "target_title": "อาชญากรรมไซเบอร์และออนไลน์",
+   "direction": "out"
+  }
+ ],
+ "svg": "graphs/20261029-cyber-03.svg"
+}

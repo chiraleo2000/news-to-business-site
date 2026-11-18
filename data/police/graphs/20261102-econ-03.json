@@ -1,0 +1,70 @@
+{
+ "case_id": "20261102-econ-03",
+ "title": "ตม.สงขลา ร่วมกองปราบปราม จับชายอายุ 35 ปีที่ด่านสะเดา ตามหมายจับศาลอาญา ข้อหาฉ้อโกง ฟอกเงิน และเกี่ยวข้ององค์กรอาชญากรรมข้ามชาติ ขณะเดินทางกลับจากมาเลเซีย",
+ "generated_at": "2026-11-09T04:33:37.157Z",
+ "node_count": 11,
+ "edge_count": 10,
+ "relations": [
+  {
+   "label": "สั่งการโดย",
+   "target_id": "30_Entities/Units/บช.สตม.",
+   "target_title": "บช.สตม.",
+   "direction": "out"
+  },
+  {
+   "label": "สั่งการโดย",
+   "target_id": "30_Entities/Units/บก.ตม.6",
+   "target_title": "บก.ตม.6",
+   "direction": "out"
+  },
+  {
+   "label": "จับโดย",
+   "target_id": "30_Entities/Units/ตม.จว.สงขลา",
+   "target_title": "ตม.จว.สงขลา",
+   "direction": "out"
+  },
+  {
+   "label": "สืบสวนโดย",
+   "target_id": "30_Entities/Units/บก.ป.",
+   "target_title": "บก.ป.",
+   "direction": "out"
+  },
+  {
+   "label": "หมายจากศาล",
+   "target_id": "30_Entities/Units/ศาลอาญา",
+   "target_title": "ศาลอาญา",
+   "direction": "out"
+  },
+  {
+   "label": "เกิดที่",
+   "target_id": "30_Entities/Places/ด่านตรวจคนเข้าเมืองสะเดา",
+   "target_title": "ด่านตรวจคนเข้าเมืองสะเดา",
+   "direction": "out"
+  },
+  {
+   "label": "เกี่ยวข้องกับบุคคล",
+   "target_id": "30_Entities/People/ผบช.สตม.",
+   "target_title": "ผบช.สตม.",
+   "direction": "out"
+  },
+  {
+   "label": "ผู้ต้องหา",
+   "target_id": "30_Entities/People/ผู้ต้องหาชาย อายุ 35 ปี (ชื่อสมมติในข่าว)",
+   "target_title": "ผู้ต้องหาชาย อายุ 35 ปี (ชื่อสมมติในข่าว)",
+   "direction": "out"
+  },
+  {
+   "label": "เกิดที่",
+   "target_id": "30_Entities/Places/สะเดา",
+   "target_title": "สะเดา",
+   "direction": "out"
+  },
+  {
+   "label": "ประเภท",
+   "target_id": "40_CrimeTypes/คดีเศรษฐกิจ การเงิน และฟอกเงิน",
+   "target_title": "คดีเศรษฐกิจ การเงิน และฟอกเงิน",
+   "direction": "out"
+  }
+ ],
+ "svg": "graphs/20261102-econ-03.svg"
+}

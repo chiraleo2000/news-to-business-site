@@ -1,0 +1,40 @@
+{
+ "case_id": "20261025-gamble-01",
+ "title": "กองปราบฯ ทลายเครือข่ายเว็บพนันออนไลน์ในชลบุรี จับ 8 ราย ขยายผลจากโรงงานผลิตบัญชีม้าพัทลุง ตามข้อกล่าวหา",
+ "generated_at": "2026-11-09T04:33:32.703Z",
+ "node_count": 6,
+ "edge_count": 5,
+ "relations": [
+  {
+   "label": "จับโดย",
+   "target_id": "30_Entities/Units/บก.ทล.",
+   "target_title": "บก.ทล.",
+   "direction": "out"
+  },
+  {
+   "label": "จับโดย",
+   "target_id": "30_Entities/Units/บก.ป.",
+   "target_title": "บก.ป.",
+   "direction": "out"
+  },
+  {
+   "label": "จับโดย",
+   "target_id": "30_Entities/Units/บก.รน.",
+   "target_title": "บก.รน.",
+   "direction": "out"
+  },
+  {
+   "label": "จับโดย",
+   "target_id": "30_Entities/Units/บช.ก.",
+   "target_title": "บช.ก.",
+   "direction": "out"
+  },
+  {
+   "label": "ประเภท",
+   "target_id": "40_CrimeTypes/พนันและบ่อนผิดกฎหมาย",
+   "target_title": "พนันและบ่อนผิดกฎหมาย",
+   "direction": "out"
+  }
+ ],
+ "svg": "graphs/20261025-gamble-01.svg"
+}

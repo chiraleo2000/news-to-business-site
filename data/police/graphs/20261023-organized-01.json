@@ -1,0 +1,58 @@
+{
+ "case_id": "20261023-organized-01",
+ "title": "รอง ผบ.ตร. ลงพื้นที่นครปฐมติดตามคดีคู่อริยิงต่อสู้ ตำรวจจับกุมแล้ว 4 ราย ออกหมายจับอีก 2 ราย",
+ "generated_at": "2026-11-09T04:33:31.075Z",
+ "node_count": 9,
+ "edge_count": 8,
+ "relations": [
+  {
+   "label": "แจ้งโดย",
+   "target_id": "30_Entities/People/ผบ.ตร.",
+   "target_title": "ผบ.ตร.",
+   "direction": "out"
+  },
+  {
+   "label": "จับโดย",
+   "target_id": "30_Entities/People/ภ.7",
+   "target_title": "ภ.7",
+   "direction": "out"
+  },
+  {
+   "label": "จับโดย",
+   "target_id": "30_Entities/Units/ตร.",
+   "target_title": "ตร.",
+   "direction": "out"
+  },
+  {
+   "label": "จับโดย",
+   "target_id": "30_Entities/Units/ศูนย์พิสูจน์หลักฐาน 7",
+   "target_title": "ศูนย์พิสูจน์หลักฐาน 7",
+   "direction": "out"
+  },
+  {
+   "label": "จับโดย",
+   "target_id": "30_Entities/Units/สภ.กำแพงแสน",
+   "target_title": "สภ.กำแพงแสน",
+   "direction": "out"
+  },
+  {
+   "label": "เกี่ยวข้องกับบุคคล",
+   "target_id": "unresolved:30_Entities/บุคคล/นิรันดร เหลื่อมศรี",
+   "target_title": "30_Entities/บุคคล/นิรันดร เหลื่อมศรี",
+   "direction": "out"
+  },
+  {
+   "label": "เกี่ยวข้องกับบุคคล",
+   "target_id": "30_Entities/บุคคล/นิรันดร เหลื่อมศรี",
+   "target_title": "นิรันดร เหลื่อมศรี",
+   "direction": "out"
+  },
+  {
+   "label": "ประเภท",
+   "target_id": "40_CrimeTypes/คดีอุกฉกรรจ์ ผู้มีอิทธิพล และอาวุธ",
+   "target_title": "คดีอุกฉกรรจ์ ผู้มีอิทธิพล และอาวุธ",
+   "direction": "out"
+  }
+ ],
+ "svg": "graphs/20261023-organized-01.svg"
+}

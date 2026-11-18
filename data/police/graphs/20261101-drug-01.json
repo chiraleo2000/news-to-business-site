@@ -1,0 +1,58 @@
+{
+ "case_id": "20261101-drug-01",
+ "title": "ผบ.ตร.สั่งสืบ บก.น.7 ขยายผล จับ 4 ราย ยึดไอซ์ 240 กก. ในบ้านเช่าบางบัวทอง นนทบุรี โยงเครือข่ายลำเลียงผ่านบริษัทขนส่งเอกชน เคยยึดเคตามีน 220 กก. ที่ฉะเชิงเทรา",
+ "generated_at": "2026-11-12T01:19:37.951Z",
+ "node_count": 9,
+ "edge_count": 8,
+ "relations": [
+  {
+   "label": "สั่งการโดย",
+   "target_id": "30_Entities/Units/บช.น.",
+   "target_title": "บช.น.",
+   "direction": "out"
+  },
+  {
+   "label": "จับโดย",
+   "target_id": "30_Entities/Units/บก.น.7",
+   "target_title": "บก.น.7",
+   "direction": "out"
+  },
+  {
+   "label": "สืบสวนโดย",
+   "target_id": "30_Entities/Units/บช.ปส.",
+   "target_title": "บช.ปส.",
+   "direction": "out"
+  },
+  {
+   "label": "เกิดที่",
+   "target_id": "30_Entities/Places/บางบัวทอง นนทบุรี",
+   "target_title": "บางบัวทอง นนทบุรี",
+   "direction": "out"
+  },
+  {
+   "label": "เกี่ยวข้องกับบุคคล",
+   "target_id": "30_Entities/People/ผบ.ตร.",
+   "target_title": "ผบ.ตร.",
+   "direction": "out"
+  },
+  {
+   "label": "เกี่ยวข้องกับบุคคล",
+   "target_id": "30_Entities/People/ผบช.น.",
+   "target_title": "ผบช.น.",
+   "direction": "out"
+  },
+  {
+   "label": "ติดตามจาก",
+   "target_id": "20_Cases/20261112-drug-01",
+   "target_title": "บก.น.7 แถลงจับชายอายุ 26 ปีตามหมายจับเครือข่ายยาเสพติด พร้อมไอซ์ 330 กิโลกรัมซุกในกระสอบข้าวเหนียวบนกระบะตู้ทึบที่ ต.บางคูรัด อ.บางใหญ่ นนทบุรี ขยายผลจากคดีไอซ์ 240 กก. บางบัวทอง",
+   "direction": "in"
+  },
+  {
+   "label": "ประเภท",
+   "target_id": "40_CrimeTypes/ยาเสพติด",
+   "target_title": "ยาเสพติด",
+   "direction": "out"
+  }
+ ],
+ "svg": "graphs/20261101-drug-01.svg"
+}

@@ -1,0 +1,40 @@
+{
+ "case_id": "20261024-econ-01",
+ "title": "จับเจ้าของเพจ \"เกษตรประเทศแคนาดา\" หลอกหางานต่างประเทศ ผู้เสียหาย 325 ราย",
+ "generated_at": "2026-11-09T04:33:31.996Z",
+ "node_count": 6,
+ "edge_count": 5,
+ "relations": [
+  {
+   "label": "สั่งการโดย",
+   "target_id": "30_Entities/Units/บช.ทท.",
+   "target_title": "บช.ทท.",
+   "direction": "out"
+  },
+  {
+   "label": "จับโดย",
+   "target_id": "30_Entities/Units/บก.ปคม.",
+   "target_title": "บก.ปคม.",
+   "direction": "out"
+  },
+  {
+   "label": "บัญชี",
+   "target_id": "unresolved:30_Entities/บัญชี/เกษตรประเทศแคนาดา",
+   "target_title": "30_Entities/บัญชี/เกษตรประเทศแคนาดา",
+   "direction": "out"
+  },
+  {
+   "label": "บัญชี",
+   "target_id": "30_Entities/บัญชี/เกษตรประเทศแคนาดา",
+   "target_title": "เกษตรประเทศแคนาดา",
+   "direction": "out"
+  },
+  {
+   "label": "ประเภท",
+   "target_id": "40_CrimeTypes/คดีเศรษฐกิจ การเงิน และฟอกเงิน",
+   "target_title": "คดีเศรษฐกิจ การเงิน และฟอกเงิน",
+   "direction": "out"
+  }
+ ],
+ "svg": "graphs/20261024-econ-01.svg"
+}

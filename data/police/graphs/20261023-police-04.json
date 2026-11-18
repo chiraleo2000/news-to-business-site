@@ -1,0 +1,46 @@
+{
+ "case_id": "20261023-police-04",
+ "title": "ผู้ช่วย ผบ.ตร. ลงชายแดนใต้ มอบเงินช่วยเหลือกำลังพลบาดเจ็บและครอบครัวตำรวจที่เสียชีวิตขณะปฏิบัติหน้าที่",
+ "generated_at": "2026-11-09T04:33:31.270Z",
+ "node_count": 7,
+ "edge_count": 6,
+ "relations": [
+  {
+   "label": "แจ้งโดย",
+   "target_id": "30_Entities/People/ผบ.ตร.",
+   "target_title": "ผบ.ตร.",
+   "direction": "out"
+  },
+  {
+   "label": "สืบสวนโดย",
+   "target_id": "30_Entities/Units/ตร.",
+   "target_title": "ตร.",
+   "direction": "out"
+  },
+  {
+   "label": "สืบสวนโดย",
+   "target_id": "30_Entities/Units/สภ.ศรีสาคร",
+   "target_title": "สภ.ศรีสาคร",
+   "direction": "out"
+  },
+  {
+   "label": "แจ้งโดย",
+   "target_id": "unresolved:30_Entities/บุคคล/ไตรรงค์ ผิวพรรณ",
+   "target_title": "30_Entities/บุคคล/ไตรรงค์ ผิวพรรณ",
+   "direction": "out"
+  },
+  {
+   "label": "แจ้งโดย",
+   "target_id": "30_Entities/บุคคล/ไตรรงค์ ผิวพรรณ",
+   "target_title": "ไตรรงค์ ผิวพรรณ",
+   "direction": "out"
+  },
+  {
+   "label": "ประเภท",
+   "target_id": "40_CrimeTypes/การปฏิบัติหน้าที่ ประชาสัมพันธ์ และนโยบายตำรวจ",
+   "target_title": "การปฏิบัติหน้าที่ ประชาสัมพันธ์ และนโยบายตำรวจ",
+   "direction": "out"
+  }
+ ],
+ "svg": "graphs/20261023-police-04.svg"
+}

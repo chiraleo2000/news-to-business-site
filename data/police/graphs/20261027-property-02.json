@@ -1,0 +1,40 @@
+{
+ "case_id": "20261027-property-02",
+ "title": "คนร้ายงัดบ้านหลังหนึ่งในซอยนาคนิวาส 11 ลาดพร้าว 71 ขโมยทองคำเงินสดและของมีค่ากว่า 2 ล้านบาท เจ้าของตั้งรางวัลนำจับ 50,000 บาท ตำรวจ สน.โชคชัยตรวจกล้อง",
+ "generated_at": "2026-11-09T04:33:33.938Z",
+ "node_count": 6,
+ "edge_count": 5,
+ "relations": [
+  {
+   "label": "สืบสวนโดย",
+   "target_id": "30_Entities/Units/สน.โชคชัย",
+   "target_title": "สน.โชคชัย",
+   "direction": "out"
+  },
+  {
+   "label": "เกิดที่",
+   "target_id": "30_Entities/Places/ลาดพร้าว 71",
+   "target_title": "ลาดพร้าว 71",
+   "direction": "out"
+  },
+  {
+   "label": "เกิดที่",
+   "target_id": "30_Entities/Places/ซอยนาคนิวาส 11",
+   "target_title": "ซอยนาคนิวาส 11",
+   "direction": "out"
+  },
+  {
+   "label": "เกิดที่",
+   "target_id": "30_Entities/สถานที่/ลาดพร้าว",
+   "target_title": "ลาดพร้าว",
+   "direction": "out"
+  },
+  {
+   "label": "ประเภท",
+   "target_id": "40_CrimeTypes/คดีทรัพย์สิน",
+   "target_title": "คดีทรัพย์สิน",
+   "direction": "out"
+  }
+ ],
+ "svg": "graphs/20261027-property-02.svg"
+}

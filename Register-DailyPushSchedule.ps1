@@ -1,5 +1,5 @@
 ﻿#Requires -Version 5.1
-# Register News-to-Business-DailyPush at 15:00 (3:00 PM) daily — after topic pipelines finish.
+# Register News-to-Business-DailyPush at 18:00 (6:00 PM) daily — after Gov News push.
 $ErrorActionPreference = 'Stop'
 $Repo = Split-Path -Parent $MyInvocation.MyCommand.Path
 $TaskName = 'News-to-Business-DailyPush'
@@ -14,7 +14,7 @@ $xml = @"
 <?xml version="1.0" encoding="UTF-16"?>
 <Task version="1.3" xmlns="http://schemas.microsoft.com/windows/2004/02/mit/task">
   <RegistrationInfo>
-    <Description>Daily News-to-Business: sync AI/Gov/Police/Tech-Law into one GitHub Pages site at 15:00</Description>
+    <Description>Daily News-to-Business: sync AI/Gov/Police/Tech-Law into one GitHub Pages site at 18:00 (after Gov News)</Description>
     <URI>\News-to-Business-DailyPush</URI>
   </RegistrationInfo>
   <Principals>
@@ -33,7 +33,7 @@ $xml = @"
   </Settings>
   <Triggers>
     <CalendarTrigger>
-      <StartBoundary>2026-11-18T15:00:00+07:00</StartBoundary>
+      <StartBoundary>2026-11-18T18:00:00+07:00</StartBoundary>
       <ScheduleByDay>
         <DaysInterval>1</DaysInterval>
       </ScheduleByDay>

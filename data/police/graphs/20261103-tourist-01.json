@@ -1,0 +1,34 @@
+{
+ "case_id": "20261103-tourist-01",
+ "title": "ตำรวจพัทยาจับชายอายุ 34 ปี แต่งกายเลียนแบบไรเดอร์ส่งอาหาร ต้องสงสัยกระชากกระเป๋าเกิน 10 ครั้ง เล็งนักท่องเที่ยวต่างชาติ ผู้เสียหายชาวเบลเยียมมาชี้ตัว",
+ "generated_at": "2026-11-09T04:33:37.897Z",
+ "node_count": 5,
+ "edge_count": 4,
+ "relations": [
+  {
+   "label": "จับโดย",
+   "target_id": "30_Entities/Units/สถานีตำรวจพัทยา",
+   "target_title": "สถานีตำรวจพัทยา",
+   "direction": "out"
+  },
+  {
+   "label": "เกิดที่",
+   "target_id": "30_Entities/Places/เซ็นทรัลพัทยา ชลบุรี",
+   "target_title": "เซ็นทรัลพัทยา ชลบุรี",
+   "direction": "out"
+  },
+  {
+   "label": "เกิดที่",
+   "target_id": "30_Entities/Places/พัทยา",
+   "target_title": "พัทยา",
+   "direction": "out"
+  },
+  {
+   "label": "ประเภท",
+   "target_id": "40_CrimeTypes/อาชญากรรมที่เกี่ยวข้องกับนักท่องเที่ยวและชาวต่างชาติ",
+   "target_title": "อาชญากรรมที่เกี่ยวข้องกับนักท่องเที่ยวและชาวต่างชาติ",
+   "direction": "out"
+  }
+ ],
+ "svg": "graphs/20261103-tourist-01.svg"
+}

@@ -23,7 +23,7 @@ if errorlevel 1 (
   exit /b 1
 )
 
-git add -- "index.html" "assets" "js" "data" "sources.json" ".nojekyll" "README.md" "Sync-FromSources.ps1" "DailyPush.ps1" "Register-DailyPushSchedule.ps1" "PUSH.bat" 1>> "%LOG%" 2>&1
+git add -- "index.html" "police-intel.html" "assets" "js" "data" "sources.json" ".nojekyll" "README.md" "Sync-FromSources.ps1" "DailyPush.ps1" "Register-DailyPushSchedule.ps1" "PUSH.bat" 1>> "%LOG%" 2>&1
 
 git diff --cached --quiet
 if %ERRORLEVEL%==0 (

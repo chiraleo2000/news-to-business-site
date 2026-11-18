@@ -1,0 +1,64 @@
+{
+ "case_id": "20261022-tourist-pattaya-immigration-drive",
+ "title": "ผบช.สตม. ประชุมที่พัทยา คุมเข้มความปลอดภัยนักท่องเที่ยว ใช้ AI-จดจำใบหน้าติดตามผู้มีหมายจับ",
+ "generated_at": "2026-11-09T04:33:30.135Z",
+ "node_count": 10,
+ "edge_count": 9,
+ "relations": [
+  {
+   "label": "แจ้งโดย",
+   "target_id": "30_Entities/Units/บช.ทท.",
+   "target_title": "บช.ทท.",
+   "direction": "out"
+  },
+  {
+   "label": "แจ้งโดย",
+   "target_id": "30_Entities/People/บก.ตม.3",
+   "target_title": "บก.ตม.3",
+   "direction": "out"
+  },
+  {
+   "label": "แจ้งโดย",
+   "target_id": "30_Entities/People/ผบช.สตม.",
+   "target_title": "ผบช.สตม.",
+   "direction": "out"
+  },
+  {
+   "label": "แจ้งโดย",
+   "target_id": "30_Entities/Units/ตม.",
+   "target_title": "ตม.",
+   "direction": "out"
+  },
+  {
+   "label": "สั่งการโดย",
+   "target_id": "30_Entities/Units/บช.สตม.",
+   "target_title": "บช.สตม.",
+   "direction": "out"
+  },
+  {
+   "label": "เกิดที่",
+   "target_id": "30_Entities/Places/พัทยา",
+   "target_title": "พัทยา",
+   "direction": "out"
+  },
+  {
+   "label": "เกี่ยวข้องกับบุคคล",
+   "target_id": "unresolved:30_Entities/บุคคล/นภัสินธุ์ พูนสวัสดิ์",
+   "target_title": "30_Entities/บุคคล/นภัสินธุ์ พูนสวัสดิ์",
+   "direction": "out"
+  },
+  {
+   "label": "เกี่ยวข้องกับบุคคล",
+   "target_id": "30_Entities/บุคคล/นภัสินธุ์ พูนสวัสดิ์",
+   "target_title": "นภัสินธุ์ พูนสวัสดิ์",
+   "direction": "out"
+  },
+  {
+   "label": "ประเภท",
+   "target_id": "40_CrimeTypes/อาชญากรรมที่เกี่ยวข้องกับนักท่องเที่ยวและชาวต่างชาติ",
+   "target_title": "อาชญากรรมที่เกี่ยวข้องกับนักท่องเที่ยวและชาวต่างชาติ",
+   "direction": "out"
+  }
+ ],
+ "svg": "graphs/20261022-tourist-pattaya-immigration-drive.svg"
+}

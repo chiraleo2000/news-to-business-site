@@ -1,0 +1,64 @@
+{
+ "case_id": "20261026-drug-01",
+ "title": "สตม. บุกทลายแหล่งผลิต-จำหน่าย “พอตเค” ย่านประตูน้ำ จับชาวเวียดนาม 5 ราย ยึดของกลาง 3,200 ชิ้น มูลค่ากว่า 5 ล้านบาท ตามที่ตำรวจแถลง",
+ "generated_at": "2026-11-09T04:33:33.171Z",
+ "node_count": 10,
+ "edge_count": 9,
+ "relations": [
+  {
+   "label": "แจ้งโดย",
+   "target_id": "30_Entities/People/บก.ตม.1",
+   "target_title": "บก.ตม.1",
+   "direction": "out"
+  },
+  {
+   "label": "แจ้งโดย",
+   "target_id": "30_Entities/People/ผบช.สตม.",
+   "target_title": "ผบช.สตม.",
+   "direction": "out"
+  },
+  {
+   "label": "แจ้งโดย",
+   "target_id": "30_Entities/Units/ตม.",
+   "target_title": "ตม.",
+   "direction": "out"
+  },
+  {
+   "label": "สั่งการโดย",
+   "target_id": "30_Entities/Units/บช.สตม.",
+   "target_title": "บช.สตม.",
+   "direction": "out"
+  },
+  {
+   "label": "เกิดที่",
+   "target_id": "unresolved:30_Entities/สถานที่/ประตูน้ำ",
+   "target_title": "30_Entities/สถานที่/ประตูน้ำ",
+   "direction": "out"
+  },
+  {
+   "label": "ผู้ต้องหา",
+   "target_id": "unresolved:30_Entities/ผู้ต้องหา/เสือ",
+   "target_title": "30_Entities/ผู้ต้องหา/เสือ",
+   "direction": "out"
+  },
+  {
+   "label": "ผู้ต้องหา",
+   "target_id": "30_Entities/ผู้ต้องหา/เสือ",
+   "target_title": "เสือ",
+   "direction": "out"
+  },
+  {
+   "label": "เกิดที่",
+   "target_id": "30_Entities/สถานที่/ประตูน้ำ",
+   "target_title": "ประตูน้ำ",
+   "direction": "out"
+  },
+  {
+   "label": "ประเภท",
+   "target_id": "40_CrimeTypes/ยาเสพติด",
+   "target_title": "ยาเสพติด",
+   "direction": "out"
+  }
+ ],
+ "svg": "graphs/20261026-drug-01.svg"
+}

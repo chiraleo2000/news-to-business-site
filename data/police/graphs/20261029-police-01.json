@@ -1,0 +1,64 @@
+{
+ "case_id": "20261029-police-01",
+ "title": "โฆษก ตร. ยอมรับงบเบี้ยเลี้ยงตำรวจพื้นที่ 3 จังหวัดชายแดนภาคใต้ถูกปรับลดจริง แต่ลดลงไม่มาก ผบ.ตร.สั่งหัวหน้าหน่วยบริหารงบไม่ให้กระทบขวัญกำลังใจ จ่อขอเงินงบกลางจากรัฐบาล",
+ "generated_at": "2026-11-09T04:33:35.099Z",
+ "node_count": 10,
+ "edge_count": 9,
+ "relations": [
+  {
+   "label": "แจ้งโดย",
+   "target_id": "30_Entities/Units/ตร.",
+   "target_title": "ตร.",
+   "direction": "out"
+  },
+  {
+   "label": "สั่งการโดย",
+   "target_id": "30_Entities/Units/ภ.9",
+   "target_title": "ภ.9",
+   "direction": "out"
+  },
+  {
+   "label": "แจ้งโดย",
+   "target_id": "30_Entities/Units/ตชด.",
+   "target_title": "ตชด.",
+   "direction": "out"
+  },
+  {
+   "label": "เกิดที่",
+   "target_id": "30_Entities/Places/3 จังหวัดชายแดนภาคใต้",
+   "target_title": "3 จังหวัดชายแดนภาคใต้",
+   "direction": "out"
+  },
+  {
+   "label": "เกี่ยวข้องกับบุคคล",
+   "target_id": "30_Entities/People/โฆษก ตร.",
+   "target_title": "โฆษก ตร.",
+   "direction": "out"
+  },
+  {
+   "label": "เกี่ยวข้องกับบุคคล",
+   "target_id": "30_Entities/People/ผบ.ตร.",
+   "target_title": "ผบ.ตร.",
+   "direction": "out"
+  },
+  {
+   "label": "เกี่ยวข้องกับบุคคล",
+   "target_id": "30_Entities/บุคคล/ศิริวัฒน์ ดีพอ",
+   "target_title": "ศิริวัฒน์ ดีพอ",
+   "direction": "out"
+  },
+  {
+   "label": "สั่งการโดย",
+   "target_id": "30_Entities/บุคคล/สำราญ นวลมา",
+   "target_title": "สำราญ นวลมา",
+   "direction": "out"
+  },
+  {
+   "label": "ประเภท",
+   "target_id": "40_CrimeTypes/การปฏิบัติหน้าที่ ประชาสัมพันธ์ และนโยบายตำรวจ",
+   "target_title": "การปฏิบัติหน้าที่ ประชาสัมพันธ์ และนโยบายตำรวจ",
+   "direction": "out"
+  }
+ ],
+ "svg": "graphs/20261029-police-01.svg"
+}

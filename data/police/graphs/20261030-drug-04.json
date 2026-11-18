@@ -1,0 +1,58 @@
+{
+ "case_id": "20261030-drug-04",
+ "title": "นรข.ไล่ล่าข้ามจังหวัดจากริมโขงมุกดาหารถึงนครพนม จับชายวัย 30 ปี ยึดยาบ้าราว 1.096 ล้านเม็ดใน 3 กระสอบ พร้อมรถยนต์",
+ "generated_at": "2026-11-09T04:33:35.604Z",
+ "node_count": 9,
+ "edge_count": 8,
+ "relations": [
+  {
+   "label": "จับโดย",
+   "target_id": "30_Entities/Units/นรข.",
+   "target_title": "นรข.",
+   "direction": "out"
+  },
+  {
+   "label": "จับโดย",
+   "target_id": "30_Entities/Units/สถานีเรือมุกดาหาร",
+   "target_title": "สถานีเรือมุกดาหาร",
+   "direction": "out"
+  },
+  {
+   "label": "สืบสวนโดย",
+   "target_id": "30_Entities/Units/สภ.เมืองมุกดาหาร",
+   "target_title": "สภ.เมืองมุกดาหาร",
+   "direction": "out"
+  },
+  {
+   "label": "สั่งการโดย",
+   "target_id": "30_Entities/Units/กองทัพเรือ",
+   "target_title": "กองทัพเรือ",
+   "direction": "out"
+  },
+  {
+   "label": "เกิดที่",
+   "target_id": "30_Entities/Places/แก่งกระเบา อ.หว้านใหญ่",
+   "target_title": "แก่งกระเบา อ.หว้านใหญ่",
+   "direction": "out"
+  },
+  {
+   "label": "เกิดที่",
+   "target_id": "30_Entities/Places/ถนนบ้านหนองบ่อ อ.นาแก",
+   "target_title": "ถนนบ้านหนองบ่อ อ.นาแก",
+   "direction": "out"
+  },
+  {
+   "label": "เกี่ยวข้องกับบุคคล",
+   "target_id": "30_Entities/People/ผบ.นรข.",
+   "target_title": "ผบ.นรข.",
+   "direction": "out"
+  },
+  {
+   "label": "ประเภท",
+   "target_id": "40_CrimeTypes/ยาเสพติด",
+   "target_title": "ยาเสพติด",
+   "direction": "out"
+  }
+ ],
+ "svg": "graphs/20261030-drug-04.svg"
+}

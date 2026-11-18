@@ -31,6 +31,7 @@
     detailMeta: document.getElementById("detailMeta"),
     detailBody: document.getElementById("detailBody"),
     detailLink: document.getElementById("detailLink"),
+    policeTools: document.getElementById("policeTools"),
   };
 
   function escapeHtml(value) {
@@ -178,6 +179,7 @@
 
   function paint() {
     const items = filteredItems();
+    if (els.policeTools) els.policeTools.hidden = state.topic !== "police";
     renderOverview(items);
     renderCards(items);
   }

@@ -1,0 +1,34 @@
+{
+ "case_id": "20261025-drug-06",
+ "title": "ฝ่ายปกครองสุพรรณบุรีล่อซื้อจับแม่ค้าขนมเครป พบซุกยาบ้า 220 เม็ดในขนม ผู้ต้องหาเคยถูกจับคดียาเสพติดกว่า 10 ครั้ง",
+ "generated_at": "2026-11-09T04:33:32.660Z",
+ "node_count": 5,
+ "edge_count": 4,
+ "relations": [
+  {
+   "label": "จับโดย",
+   "target_id": "30_Entities/Units/กอ.รมน.จว.สุพรรณบุรี",
+   "target_title": "กอ.รมน.จว.สุพรรณบุรี",
+   "direction": "out"
+  },
+  {
+   "label": "จับโดย",
+   "target_id": "30_Entities/Units/ฝ่ายปกครอง อ.เมืองสุพรรณบุรี",
+   "target_title": "ฝ่ายปกครอง อ.เมืองสุพรรณบุรี",
+   "direction": "out"
+  },
+  {
+   "label": "จับโดย",
+   "target_id": "30_Entities/Units/อส.อ.เมืองสุพรรณบุรี",
+   "target_title": "อส.อ.เมืองสุพรรณบุรี",
+   "direction": "out"
+  },
+  {
+   "label": "ประเภท",
+   "target_id": "40_CrimeTypes/ยาเสพติด",
+   "target_title": "ยาเสพติด",
+   "direction": "out"
+  }
+ ],
+ "svg": "graphs/20261025-drug-06.svg"
+}

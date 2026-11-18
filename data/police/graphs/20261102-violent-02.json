@@ -1,0 +1,28 @@
+{
+ "case_id": "20261102-violent-02",
+ "title": "พบศพชายอายุ 19 ปีในคลอง 17 ฉะเชิงเทรา หลังถูกกลุ่มวัยรุ่นไล่ทำร้ายแล้ววิ่งหนีตกน้ำ ญาติระบุถูกหลอกนัดไปรับ ตำรวจ สภ.ฉิมพลี รวบรวมพยานหลักฐาน",
+ "generated_at": "2026-11-09T04:33:37.349Z",
+ "node_count": 4,
+ "edge_count": 3,
+ "relations": [
+  {
+   "label": "สืบสวนโดย",
+   "target_id": "30_Entities/Units/สภ.ฉิมพลี",
+   "target_title": "สภ.ฉิมพลี",
+   "direction": "out"
+  },
+  {
+   "label": "เกิดที่",
+   "target_id": "30_Entities/Places/คลอง 17 ต.ดอนฉิมพลี",
+   "target_title": "คลอง 17 ต.ดอนฉิมพลี",
+   "direction": "out"
+  },
+  {
+   "label": "ประเภท",
+   "target_id": "40_CrimeTypes/คดีชีวิต ร่างกาย และเพศ",
+   "target_title": "คดีชีวิต ร่างกาย และเพศ",
+   "direction": "out"
+  }
+ ],
+ "svg": "graphs/20261102-violent-02.svg"
+}

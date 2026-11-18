@@ -1,0 +1,34 @@
+{
+ "case_id": "20261022-drug-sisaket-cut-the-cancer-23",
+ "title": "ปปส. ภาค 3 ลุย \"ตัดเนื้อร้าย ครั้งที่ 23\" สุ่มตรวจ อบต. ศรีสะเกษ พบลูกจ้างเหมา 6 ราย ผลปัสสาวะเป็นบวก",
+ "generated_at": "2026-11-09T04:33:29.486Z",
+ "node_count": 5,
+ "edge_count": 4,
+ "relations": [
+  {
+   "label": "สั่งการโดย",
+   "target_id": "30_Entities/Units/บช.ปส.",
+   "target_title": "บช.ปส.",
+   "direction": "out"
+  },
+  {
+   "label": "จับโดย",
+   "target_id": "30_Entities/Units/ปปส.ภาค 3",
+   "target_title": "ปปส.ภาค 3",
+   "direction": "out"
+  },
+  {
+   "label": "จับโดย",
+   "target_id": "30_Entities/Units/ศอ.ปส.จ.ศรีสะเกษ",
+   "target_title": "ศอ.ปส.จ.ศรีสะเกษ",
+   "direction": "out"
+  },
+  {
+   "label": "ประเภท",
+   "target_id": "40_CrimeTypes/ยาเสพติด",
+   "target_title": "ยาเสพติด",
+   "direction": "out"
+  }
+ ],
+ "svg": "graphs/20261022-drug-sisaket-cut-the-cancer-23.svg"
+}

@@ -222,7 +222,11 @@ function Sync-PoliceTopic {
     }
 
     $copied = 0
-    $patterns = @('manifest.json', 'feed.json', '*_crime.json', '*_cyber.json', '*_alerts*.json', '*_bd_leads*.json')
+    $patterns = @(
+        'manifest.json', 'feed.json', 'graph.json', 'tunnel.json',
+        'positions.json', 'entity-aliases.json', 'thai-wordlist.json',
+        '*_crime.json', '*_cyber.json', '*_alerts*.json', '*_bd_leads*.json'
+    )
     foreach ($pat in $patterns) {
         Get-ChildItem -LiteralPath $srcRoot -Filter $pat -File -ErrorAction SilentlyContinue | ForEach-Object {
             $include = $true
@@ -231,6 +235,17 @@ function Sync-PoliceTopic {
             }
             if (-not $include) { return }
             $dest = Join-Path $destDir $_.Name
+            if (Copy-IfChanged -Source $_.FullName -Dest $dest) { $copied++ }
+        }
+    }
+
+    # Graph ego assets used by GraphRAG detail / story views
+    $graphsSrc = Join-Path $srcRoot 'graphs'
+    $graphsDest = Join-Path $destDir 'graphs'
+    if (Test-Path -LiteralPath $graphsSrc) {
+        Ensure-Dir $graphsDest
+        Get-ChildItem -LiteralPath $graphsSrc -File -ErrorAction SilentlyContinue | ForEach-Object {
+            $dest = Join-Path $graphsDest $_.Name
             if (Copy-IfChanged -Source $_.FullName -Dest $dest) { $copied++ }
         }
     }

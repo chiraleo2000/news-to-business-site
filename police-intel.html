@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <title>Police GraphRAG — News to Business</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/site.css?v=20261118b" />
+  <link rel="stylesheet" href="assets/css/police-brain.css?v=20261118b" />
+</head>
+<body class="is-brain">
+  <div class="police-intel-bar">
+    <a class="topic-tab" href="./index.html">← News to Business</a>
+    <button type="button" class="topic-tab is-active" data-police-tab="brain">ข้อมูลกราฟ + แชท</button>
+    <button type="button" class="topic-tab" data-police-tab="cyber-brain">กราฟไซเบอร์</button>
+    <button type="button" class="topic-tab" data-police-tab="connect">เชื่อมต่อ LLM</button>
+    <span class="meta-pill" id="police-status">กำลังโหลด…</span>
+  </div>
+
+  <main id="main" class="wrap main-brain">
+    <section id="view-brain" class="view-brain">
+      <div class="brain-shell">
+        <header class="brain-topbar">
+          <div class="brain-topbar-title">
+            <p class="brain-kicker">Obsidian → knowledge graph</p>
+            <h1>ข้อมูลกราฟ</h1>
+            <p class="brain-status-line" id="brain-status"></p>
+          </div>
+          <div class="brain-stats" id="brain-stats" aria-live="polite"></div>
+          <details class="brain-help-box">
+            <summary>คำอธิบาย</summary>
+            <div id="brain-help" class="brain-help"></div>
+          </details>
+        </header>
+
+        <div class="brain-filterbar" aria-label="ตัวกรองกราฟ">
+          <label class="brain-field brain-field-search">
+            <span>ค้นหา</span>
+            <input id="brain-search" type="search" placeholder="ชื่อโน้ต แท็ก ประเภท…" />
+          </label>
+          <fieldset class="brain-fieldset brain-fieldset-inline">
+            <legend>ชนิด</legend>
+            <div id="brain-kind-checks" class="brain-checks brain-checks-row">
+              <label><input type="checkbox" data-kind-check="case" checked /> คดี</label>
+              <label><input type="checkbox" data-kind-check="entity" checked /> เอนทิตี</label>
+              <label><input type="checkbox" data-kind-check="crime_type" /> ประเภท</label>
+              <label><input type="checkbox" data-kind-check="daily" /> รายวัน</label>
+              <label><input type="checkbox" data-kind-check="unresolved" /> ลิงก์ค้าง</label>
+              <label><input type="checkbox" data-kind-check="other" /> อื่น</label>
+            </div>
+          </fieldset>
+          <label class="brain-field">
+            <span>กลุ่มเอนทิตี</span>
+            <select id="brain-entity-group"><option value="">ทั้งหมด</option></select>
+          </label>
+          <label class="brain-field">
+            <span>หน่วยงาน</span>
+            <select id="brain-bureau"><option value="">ทั้งหมด</option></select>
+          </label>
+          <label class="brain-field">
+            <span>ประเภทอาชญากรรม</span>
+            <select id="brain-crime-type"><option value="">ทุกประเภท</option></select>
+          </label>
+          <label class="brain-field brain-field-narrow">
+            <span>degree ≥</span>
+            <input id="brain-min-degree" type="number" min="0" max="50" value="0" />
+          </label>
+          <label class="brain-field">
+            <span>ตั้งแต่</span>
+            <input id="brain-date-from" type="date" />
+          </label>
+          <label class="brain-field">
+            <span>ถึง</span>
+            <input id="brain-date-to" type="date" />
+          </label>
+          <label class="brain-field">
+            <span>ความสัมพันธ์</span>
+            <select id="brain-relation"><option value="">ทุกความสัมพันธ์</option></select>
+          </label>
+          <label class="brain-field">
+            <span>ป้ายชื่อ</span>
+            <select id="brain-labels">
+              <option value="auto" selected>อัตโนมัติ</option>
+              <option value="all">ทั้งหมด</option>
+              <option value="none">ซ่อน</option>
+            </select>
+          </label>
+          <label class="brain-check">
+            <input type="checkbox" id="brain-hide-orphans" checked />
+            ซ่อนไร้ลิงก์
+          </label>
+          <label class="brain-check">
+            <input type="checkbox" id="brain-isolate" />
+            โฟกัสเพื่อนบ้าน
+          </label>
+          <div class="brain-filter-actions">
+            <button type="button" class="btn-ghost" id="brain-reset">รีเซ็ต</button>
+            <button type="button" class="btn-ghost" id="brain-zoom-out" title="ซูมออก">−</button>
+            <button type="button" class="btn-ghost" id="brain-zoom-fit" title="พอดีจอ">พอดี</button>
+            <button type="button" class="btn-ghost" id="brain-zoom-in" title="ซูมเข้า">+</button>
+          </div>
+        </div>
+
+        <div class="brain-legend-row">
+          <div class="brain-legend" id="brain-legend" aria-label="คำอธิบายสี"></div>
+          <span class="muted" id="brain-meta"></span>
+          <span class="muted brain-hint">โหนดใหญ่ = หน่วยงาน บุคคล หรือสถานที่ · จุดเล็ก = หัวข่าว · สกอร์ลซูม · ถามแชทด้านขวา</span>
+        </div>
+
+        <div class="brain-workspace">
+          <div class="brain-stage">
+            <canvas id="brain-canvas" width="1600" height="900" aria-label="ข้อมูลกราฟ"></canvas>
+            <aside id="brain-detail" class="brain-detail" aria-live="polite"></aside>
+          </div>
+          <aside class="brain-chat" aria-label="แชทถามจากกราฟ">
+            <div class="brain-chat-log" id="brain-chat-log">
+              <div class="brain-chat-empty" id="brain-chat-empty">
+                <p class="brain-kind">ถามจากกราฟ</p>
+                <p>เลือกตัวอย่าง หรือพิมพ์คำถามด้านล่าง — ใช้ GraphRAG ในเบราว์เซอร์ + Gemma ผ่าน tunnel</p>
+                <div class="brain-ask-examples" id="brain-ask-examples">
+                  <button type="button" class="btn-ghost brain-example" data-example="0" data-mode="all">ผมต้องการทราบว่ากรมศุลกากรมีการห้ามปรามการเข้ามาของยาเสพติดตอนนี้ได้จำนวนทั้งหมดเท่าไร่</button>
+                  <button type="button" class="btn-ghost brain-example" data-example="1" data-mode="all">ตอนนี้ผลงานของ ผู้บัญชาการตำรวจแห่งชาติปัจจุบันมีอะไรบ้าง</button>
+                  <button type="button" class="btn-ghost brain-example" data-example="2" data-mode="all">ใครเป็นเลขาธิการ ก.ล.ต. ตอนนี้</button>
+                  <button type="button" class="btn-ghost brain-example" data-example="0" data-mode="cyber" hidden>ตอนนี้คดียาบัญชีม้าและคอลเซ็นเตอร์มีกี่คดี</button>
+                  <button type="button" class="btn-ghost brain-example" data-example="1" data-mode="cyber" hidden>บช.สอท. มีผลงานจับกุมอะไรบ้างในช่วงที่ผ่านมา</button>
+                  <button type="button" class="btn-ghost brain-example" data-example="2" data-mode="cyber" hidden>มีข่าวเตือนภัยฟิชชิงหรือหลอกลงทุนอะไรบ้าง</button>
+                </div>
+              </div>
+            </div>
+            <form class="brain-chat-form" id="brain-chat-form">
+              <label class="sr-only" for="brain-question">ถามจากกราฟ</label>
+              <input id="brain-question" type="text" placeholder="ถามจำนวนข่าว ผลงาน หรือผู้ดำรงตำแหน่ง…" autocomplete="off" />
+              <button type="button" class="btn-ghost" id="brain-chat-clear">เคลียร์</button>
+              <button type="submit" class="btn-ghost" id="brain-ask-submit">ส่ง</button>
+            </form>
+          </aside>
+        </div>
+
+        <p class="muted" id="brain-empty" hidden>
+          ยังไม่มี <code>data/police/graph.json</code> — รอ DailyPush ซิงก์จาก police-news-intel-kit
+        </p>
+      </div>
+    </section>
+
+    <section id="view-connect" class="view-connect" hidden>
+      <section class="hero hero-compact" style="padding:1.2rem 1rem 0.4rem">
+        <p class="brain-kicker">ค่าในเบราว์เซอร์นี้เท่านั้น</p>
+        <h1 style="margin:0.2rem 0">เชื่อมต่อ</h1>
+        <p class="muted">แชทเรียก Gemma ผ่านฐาน HTTPS — ถ้าเว้นว่าง หน้านี้จะอ่าน <code>data/police/tunnel.json</code> อัตโนมัติ</p>
+      </section>
+      <section class="panel connect-panel">
+        <div class="connect-grid">
+          <label class="brain-field">
+            <span>ฐาน HTTPS (ไม่บังคับ)</span>
+            <input id="connect-public-base" type="url" placeholder="https://….ngrok-free.app" autocomplete="off" />
+          </label>
+        </div>
+        <dl class="connect-derived">
+          <div><dt>LLM</dt><dd><code id="connect-llm-url">…</code></dd></div>
+          <div><dt>MCP</dt><dd><code id="connect-mcp-url">…</code></dd></div>
+        </dl>
+        <p class="muted">โมเดล google/gemma-4-e2b · LLM คือ {ฐาน}/1234/v1/chat/completions · MCP คือ {ฐาน}/8787/mcp</p>
+        <div class="connect-actions">
+          <button type="button" class="btn-ghost" id="connect-save">บันทึก</button>
+          <button type="button" class="btn-ghost" id="connect-test">ทดสอบ MCP</button>
+          <button type="button" class="btn-ghost" id="connect-test-llm">ทดสอบ LLM</button>
+        </div>
+        <p class="muted" id="connect-status" aria-live="polite"></p>
+        <pre id="connect-llm-reply" class="connect-llm-reply" hidden></pre>
+      </section>
+    </section>
+  </main>
+
+  <script src="js/police/format.js?v=20261118b" defer></script>
+  <script src="js/police/positions.js?v=20261118b" defer></script>
+  <script src="js/police/graph.js?v=20261118b" defer></script>
+  <script src="js/police/rag.js?v=20261118b" defer></script>
+  <script src="js/police/boot.js?v=20261118b" defer></script>
+</body>
+</html>

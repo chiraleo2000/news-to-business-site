@@ -1,0 +1,40 @@
+{
+ "case_id": "20261102-gamble-02",
+ "title": "สภ.ฉลอง ล้อมจับบ่อนโปปั่นในวิลล่า ต.ราไวย์ ภูเก็ต 21 ราย ยึดเงินสดกว่า 100,000 บาท นักพนันกระโดดกำแพงหนี",
+ "generated_at": "2026-11-09T04:33:37.200Z",
+ "node_count": 6,
+ "edge_count": 5,
+ "relations": [
+  {
+   "label": "จับโดย",
+   "target_id": "30_Entities/Units/สภ.ฉลอง",
+   "target_title": "สภ.ฉลอง",
+   "direction": "out"
+  },
+  {
+   "label": "เกิดที่",
+   "target_id": "30_Entities/Places/ต.ราไวย์ อ.เมือง ภูเก็ต",
+   "target_title": "ต.ราไวย์ อ.เมือง ภูเก็ต",
+   "direction": "out"
+  },
+  {
+   "label": "เกี่ยวข้องกับบุคคล",
+   "target_id": "30_Entities/บุคคล/สุระศักดิ์ ใจดี",
+   "target_title": "สุระศักดิ์ ใจดี",
+   "direction": "out"
+  },
+  {
+   "label": "เกิดที่",
+   "target_id": "30_Entities/สถานที่/ฉลอง",
+   "target_title": "ฉลอง",
+   "direction": "out"
+  },
+  {
+   "label": "ประเภท",
+   "target_id": "40_CrimeTypes/พนันและบ่อนผิดกฎหมาย",
+   "target_title": "พนันและบ่อนผิดกฎหมาย",
+   "direction": "out"
+  }
+ ],
+ "svg": "graphs/20261102-gamble-02.svg"
+}

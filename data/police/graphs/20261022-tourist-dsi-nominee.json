@@ -1,0 +1,52 @@
+{
+ "case_id": "20261022-tourist-dsi-nominee",
+ "title": "DSI ส่งหลักฐานให้มหาดไทยทบทวนสัญชาติ นักธุรกิจต่างชาติ ขยายผลนอมินีถือครองที่ดิน",
+ "generated_at": "2026-11-09T04:33:30.067Z",
+ "node_count": 8,
+ "edge_count": 7,
+ "relations": [
+  {
+   "label": "แจ้งโดย",
+   "target_id": "30_Entities/Units/ดีเอสไอ",
+   "target_title": "ดีเอสไอ",
+   "direction": "out"
+  },
+  {
+   "label": "แจ้งโดย",
+   "target_id": "30_Entities/People/กรมการปกครอง",
+   "target_title": "กรมการปกครอง",
+   "direction": "out"
+  },
+  {
+   "label": "แจ้งโดย",
+   "target_id": "30_Entities/People/กรมที่ดิน",
+   "target_title": "กรมที่ดิน",
+   "direction": "out"
+  },
+  {
+   "label": "แจ้งโดย",
+   "target_id": "30_Entities/People/กรมสรรพากร",
+   "target_title": "กรมสรรพากร",
+   "direction": "out"
+  },
+  {
+   "label": "แจ้งโดย",
+   "target_id": "30_Entities/Units/ปปง.",
+   "target_title": "ปปง.",
+   "direction": "out"
+  },
+  {
+   "label": "สั่งการโดย",
+   "target_id": "30_Entities/Units/บช.สตม.",
+   "target_title": "บช.สตม.",
+   "direction": "out"
+  },
+  {
+   "label": "ประเภท",
+   "target_id": "40_CrimeTypes/อาชญากรรมที่เกี่ยวข้องกับนักท่องเที่ยวและชาวต่างชาติ",
+   "target_title": "อาชญากรรมที่เกี่ยวข้องกับนักท่องเที่ยวและชาวต่างชาติ",
+   "direction": "out"
+  }
+ ],
+ "svg": "graphs/20261022-tourist-dsi-nominee.svg"
+}

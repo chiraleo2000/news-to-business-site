@@ -1,0 +1,58 @@
+{
+ "case_id": "20261025-drug-05",
+ "title": "ตำรวจบางละมุงจับ “เจ๊เบียร์ คนละยำ” ตามหมายจับ ข้อหาชักชวนผู้อื่นเสพยาและเสพไอซ์โชว์ในไลฟ์สด ผู้ต้องหายอมรับใช้ไอซ์ ตำรวจเตรียมแจ้งเพิ่มข้อหาพ.ร.บ.คอมพิวเตอร์",
+ "generated_at": "2026-11-09T04:33:32.636Z",
+ "node_count": 9,
+ "edge_count": 8,
+ "relations": [
+  {
+   "label": "จับโดย",
+   "target_id": "30_Entities/People/สภ.บางละมุง",
+   "target_title": "สภ.บางละมุง",
+   "direction": "out"
+  },
+  {
+   "label": "หมายจากศาล",
+   "target_id": "30_Entities/Units/ศาลจังหวัดพัทยา",
+   "target_title": "ศาลจังหวัดพัทยา",
+   "direction": "out"
+  },
+  {
+   "label": "เกิดที่",
+   "target_id": "30_Entities/Places/บางละมุง",
+   "target_title": "บางละมุง",
+   "direction": "out"
+  },
+  {
+   "label": "ผู้ต้องหา",
+   "target_id": "unresolved:30_Entities/ผู้ต้องหา/เจ๊เบียร์ คนละยำ",
+   "target_title": "30_Entities/ผู้ต้องหา/เจ๊เบียร์ คนละยำ",
+   "direction": "out"
+  },
+  {
+   "label": "ผู้ต้องหา",
+   "target_id": "30_Entities/ผู้ต้องหา/เจ๊เบียร์ คนละยำ",
+   "target_title": "เจ๊เบียร์ คนละยำ",
+   "direction": "out"
+  },
+  {
+   "label": "ติดตามจาก",
+   "target_id": "20_Cases/20261023-drug-04",
+   "target_title": "ตำรวจปราบยาเสพติดจ่อเรียกอินฟลูเอนเซอร์ที่พ่นควันกลางไลฟ์ ตรวจค้นห้องพักแต่ไม่พบของผิดกฎหมาย",
+   "direction": "out"
+  },
+  {
+   "label": "ติดตามจาก",
+   "target_id": "20_Cases/20261024-drug-03",
+   "target_title": "Je Beer Khon La Yam Arrested at Home by Police for Drug Solicitation, Faces Up to 10 Years in Prison",
+   "direction": "out"
+  },
+  {
+   "label": "ประเภท",
+   "target_id": "40_CrimeTypes/ยาเสพติด",
+   "target_title": "ยาเสพติด",
+   "direction": "out"
+  }
+ ],
+ "svg": "graphs/20261025-drug-05.svg"
+}

@@ -1,0 +1,34 @@
+{
+ "case_id": "20261022-transnat-norwegian-redcotice",
+ "title": "ตม. จับเยาวชนนอร์เวย์วัย 19 ปีตามหมายแดง คดีพยายามฆ่าที่สมุทรปราการ",
+ "generated_at": "2026-11-09T04:33:30.158Z",
+ "node_count": 5,
+ "edge_count": 4,
+ "relations": [
+  {
+   "label": "จับโดย",
+   "target_id": "30_Entities/Units/ตม.จว.สมุทรปราการ",
+   "target_title": "ตม.จว.สมุทรปราการ",
+   "direction": "out"
+  },
+  {
+   "label": "สั่งการโดย",
+   "target_id": "30_Entities/Units/บช.สตม.",
+   "target_title": "บช.สตม.",
+   "direction": "out"
+  },
+  {
+   "label": "จับโดย",
+   "target_id": "30_Entities/Units/ตม.",
+   "target_title": "ตม.",
+   "direction": "out"
+  },
+  {
+   "label": "ประเภท",
+   "target_id": "40_CrimeTypes/อาชญากรรมข้ามชาติและความร่วมมือระหว่างประเทศ",
+   "target_title": "อาชญากรรมข้ามชาติและความร่วมมือระหว่างประเทศ",
+   "direction": "out"
+  }
+ ],
+ "svg": "graphs/20261022-transnat-norwegian-redcotice.svg"
+}

@@ -1,0 +1,76 @@
+{
+ "case_id": "20261025-drug-01",
+ "title": "บช.น.-สตม. จับชายต่างชาติวัย 54 ปี ในคอนโดห้วยขวาง ตรวจยึดไอซ์ 15 กรัม ตามข้อกล่าวหามอมยาแอบถ่ายคลิป พำนักเกินกำหนด 2,095 วัน",
+ "generated_at": "2026-11-09T04:33:32.545Z",
+ "node_count": 12,
+ "edge_count": 11,
+ "relations": [
+  {
+   "label": "จับโดย",
+   "target_id": "30_Entities/Units/บช.น.",
+   "target_title": "บช.น.",
+   "direction": "out"
+  },
+  {
+   "label": "แจ้งโดย",
+   "target_id": "30_Entities/People/ผบช.น.",
+   "target_title": "ผบช.น.",
+   "direction": "out"
+  },
+  {
+   "label": "แจ้งโดย",
+   "target_id": "30_Entities/People/ผบช.สตม.",
+   "target_title": "ผบช.สตม.",
+   "direction": "out"
+  },
+  {
+   "label": "จับโดย",
+   "target_id": "30_Entities/Units/ตม.",
+   "target_title": "ตม.",
+   "direction": "out"
+  },
+  {
+   "label": "จับโดย",
+   "target_id": "30_Entities/Units/บก.สส.สตม.",
+   "target_title": "บก.สส.สตม.",
+   "direction": "out"
+  },
+  {
+   "label": "จับโดย",
+   "target_id": "30_Entities/Units/ป.ป.ส.กทม.",
+   "target_title": "ป.ป.ส.กทม.",
+   "direction": "out"
+  },
+  {
+   "label": "จับโดย",
+   "target_id": "30_Entities/Units/ศอ.ปส.บช.น.",
+   "target_title": "ศอ.ปส.บช.น.",
+   "direction": "out"
+  },
+  {
+   "label": "จับโดย",
+   "target_id": "30_Entities/Units/สน.ห้วยขวาง",
+   "target_title": "สน.ห้วยขวาง",
+   "direction": "out"
+  },
+  {
+   "label": "เกิดที่",
+   "target_id": "unresolved:30_Entities/สถานที่/ห้วยขวาง",
+   "target_title": "30_Entities/สถานที่/ห้วยขวาง",
+   "direction": "out"
+  },
+  {
+   "label": "เกิดที่",
+   "target_id": "30_Entities/สถานที่/ห้วยขวาง",
+   "target_title": "ห้วยขวาง",
+   "direction": "out"
+  },
+  {
+   "label": "ประเภท",
+   "target_id": "40_CrimeTypes/ยาเสพติด",
+   "target_title": "ยาเสพติด",
+   "direction": "out"
+  }
+ ],
+ "svg": "graphs/20261025-drug-01.svg"
+}

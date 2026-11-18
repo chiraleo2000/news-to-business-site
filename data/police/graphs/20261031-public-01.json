@@ -1,0 +1,34 @@
+{
+ "case_id": "20261031-public-01",
+ "title": "ศาลอาญาพิพากษาจำคุกอานนท์ นำภา และจำเลยอีก 4 ราย คนละ 2 ปี 8 เดือน ไม่รอลงอาญา คดี ม.112 ปราศรัยชุมนุม 25 พ.ย. 2563 หน้าสำนักงานใหญ่ SCB โทษรวมของอานนท์ถึง 38 ปี",
+ "generated_at": "2026-11-09T04:33:36.408Z",
+ "node_count": 5,
+ "edge_count": 4,
+ "relations": [
+  {
+   "label": "หมายจากศาล",
+   "target_id": "30_Entities/Units/ศาลอาญา",
+   "target_title": "ศาลอาญา",
+   "direction": "out"
+  },
+  {
+   "label": "แจ้งโดย",
+   "target_id": "30_Entities/Units/สำนักงานอัยการสูงสุด",
+   "target_title": "สำนักงานอัยการสูงสุด",
+   "direction": "out"
+  },
+  {
+   "label": "เกิดที่",
+   "target_id": "30_Entities/Places/ศาลอาญา กรุงเทพมหานคร",
+   "target_title": "ศาลอาญา กรุงเทพมหานคร",
+   "direction": "out"
+  },
+  {
+   "label": "ประเภท",
+   "target_id": "40_CrimeTypes/ความสงบเรียบร้อยและความมั่นคงภายใน",
+   "target_title": "ความสงบเรียบร้อยและความมั่นคงภายใน",
+   "direction": "out"
+  }
+ ],
+ "svg": "graphs/20261031-public-01.svg"
+}

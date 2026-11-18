@@ -1,0 +1,46 @@
+{
+ "case_id": "20261022-property-latphrao-copper",
+ "title": "สน.โชคชัยจับสามีภรรยาช่างแอร์ ตระเวนลักทรัพย์ในหมู่บ้านลาดพร้าว ยึดชิ้นส่วนแอร์และทองแดง",
+ "generated_at": "2026-11-09T04:33:30.019Z",
+ "node_count": 7,
+ "edge_count": 6,
+ "relations": [
+  {
+   "label": "สั่งการโดย",
+   "target_id": "30_Entities/Units/บช.น.",
+   "target_title": "บช.น.",
+   "direction": "out"
+  },
+  {
+   "label": "จับโดย",
+   "target_id": "30_Entities/Units/นครบาล 4",
+   "target_title": "นครบาล 4",
+   "direction": "out"
+  },
+  {
+   "label": "จับโดย",
+   "target_id": "30_Entities/Units/สน.โชคชัย",
+   "target_title": "สน.โชคชัย",
+   "direction": "out"
+  },
+  {
+   "label": "เกิดที่",
+   "target_id": "unresolved:30_Entities/สถานที่/ลาดพร้าว",
+   "target_title": "30_Entities/สถานที่/ลาดพร้าว",
+   "direction": "out"
+  },
+  {
+   "label": "เกิดที่",
+   "target_id": "30_Entities/สถานที่/ลาดพร้าว",
+   "target_title": "ลาดพร้าว",
+   "direction": "out"
+  },
+  {
+   "label": "ประเภท",
+   "target_id": "40_CrimeTypes/คดีทรัพย์สิน",
+   "target_title": "คดีทรัพย์สิน",
+   "direction": "out"
+  }
+ ],
+ "svg": "graphs/20261022-property-latphrao-copper.svg"
+}

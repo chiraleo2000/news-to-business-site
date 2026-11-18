@@ -1,0 +1,7 @@
+{
+  "base": "https://5de7-180-183-245-205.ngrok-free.app",
+  "mcp": "https://5de7-180-183-245-205.ngrok-free.app/8787/mcp",
+  "llm": "https://5de7-180-183-245-205.ngrok-free.app/1234/v1/chat/completions",
+  "model": "google/gemma-4-e2b",
+  "updated_at": "2026-11-18T13:42:47.690Z"
+}

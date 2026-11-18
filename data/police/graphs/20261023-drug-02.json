@@ -1,0 +1,58 @@
+{
+ "case_id": "20261023-drug-02",
+ "title": "ตำรวจปราบปรามยาเสพติดทลายเครือข่ายใหญ่ 7 คดี ยึดยาบ้ากว่า 7 ล้านเม็ด และยืนยันการยิงตอบโต้ที่เขาย้อยเป็นไปตามกฎหมาย",
+ "generated_at": "2026-11-09T04:33:30.677Z",
+ "node_count": 9,
+ "edge_count": 8,
+ "relations": [
+  {
+   "label": "แจ้งโดย",
+   "target_id": "30_Entities/Units/บช.ปส.",
+   "target_title": "บช.ปส.",
+   "direction": "out"
+  },
+  {
+   "label": "เกิดที่",
+   "target_id": "unresolved:30_Entities/สถานที่/เขาย้อย",
+   "target_title": "30_Entities/สถานที่/เขาย้อย",
+   "direction": "out"
+  },
+  {
+   "label": "แจ้งโดย",
+   "target_id": "unresolved:30_Entities/บุคคล/ภูมิน ภูมพันธ์เมือง",
+   "target_title": "30_Entities/บุคคล/ภูมิน ภูมพันธ์เมือง",
+   "direction": "out"
+  },
+  {
+   "label": "แจ้งโดย",
+   "target_id": "unresolved:30_Entities/บุคคล/ภูมินทร์ พุ่มพันธุ์ม่วง",
+   "target_title": "30_Entities/บุคคล/ภูมินทร์ พุ่มพันธุ์ม่วง",
+   "direction": "out"
+  },
+  {
+   "label": "แจ้งโดย",
+   "target_id": "30_Entities/บุคคล/ภูมิน ภูมพันธ์เมือง",
+   "target_title": "ภูมิน ภูมพันธ์เมือง",
+   "direction": "out"
+  },
+  {
+   "label": "แจ้งโดย",
+   "target_id": "30_Entities/บุคคล/ภูมินทร์ พุ่มพันธุ์ม่วง",
+   "target_title": "ภูมินทร์ พุ่มพันธุ์ม่วง",
+   "direction": "out"
+  },
+  {
+   "label": "เกิดที่",
+   "target_id": "30_Entities/สถานที่/เขาย้อย",
+   "target_title": "เขาย้อย",
+   "direction": "out"
+  },
+  {
+   "label": "ประเภท",
+   "target_id": "40_CrimeTypes/ยาเสพติด",
+   "target_title": "ยาเสพติด",
+   "direction": "out"
+  }
+ ],
+ "svg": "graphs/20261023-drug-02.svg"
+}
