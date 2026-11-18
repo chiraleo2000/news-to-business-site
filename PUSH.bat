@@ -9,6 +9,12 @@ set "LOG=%LOGDIR%\push-%TODAY%.log"
 
 echo [%DATE% %TIME%] PUSH.bat start>> "%LOG%"
 
+REM Author env (set by DailyPush.ps1); fallback if task launches PUSH.bat alone
+if not defined GIT_AUTHOR_NAME set "GIT_AUTHOR_NAME=News to Business Bot"
+if not defined GIT_AUTHOR_EMAIL set "GIT_AUTHOR_EMAIL=chirapathleo.saelim@gmail.com"
+if not defined GIT_COMMITTER_NAME set "GIT_COMMITTER_NAME=%GIT_AUTHOR_NAME%"
+if not defined GIT_COMMITTER_EMAIL set "GIT_COMMITTER_EMAIL=%GIT_AUTHOR_EMAIL%"
+
 where git >nul 2>&1
 if errorlevel 1 (
   echo ERROR: git not found>> "%LOG%"
