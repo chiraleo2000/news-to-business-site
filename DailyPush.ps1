@@ -31,6 +31,21 @@ $ErrorActionPreference = 'Continue'
 $Repo = Split-Path -Parent $MyInvocation.MyCommand.Path
 Set-Location -LiteralPath $Repo
 
+foreach ($common in @(
+    'C:\Scripts\SchedulerCommon.ps1'
+    (Join-Path $env:USERPROFILE 'Documents\Powershell-Scheduler\SchedulerCommon.ps1')
+)) {
+    if (Test-Path -LiteralPath $common) { . $common; break }
+}
+if (Get-Command Initialize-SchedulerEnv -ErrorAction SilentlyContinue) {
+    Initialize-SchedulerEnv
+} else {
+    $env:Path = "C:\Program Files\Git\cmd;C:\Program Files\Git\bin;" + $env:Path
+    $env:HTTP_PROXY = ''; $env:HTTPS_PROXY = ''; $env:http_proxy = ''; $env:https_proxy = ''
+    $env:ALL_PROXY = ''; $env:all_proxy = ''; $env:NO_PROXY = '*'; $env:no_proxy = '*'
+    $env:GIT_TERMINAL_PROMPT = '0'
+}
+
 $LogDir = Join-Path $Repo 'Logs'
 if (-not (Test-Path -LiteralPath $LogDir)) {
     New-Item -ItemType Directory -Path $LogDir -Force | Out-Null
@@ -78,20 +93,27 @@ function Test-SourceToday {
     return $hits
 }
 
-function Wait-ForCoreSources {
+function Test-AnyUsableSource {
+    param($Hits)
+    return [bool]($Hits.ai -or $Hits.gov -or $Hits.police_crime -or $Hits.police_cyber -or $Hits.tech_law)
+}
+
+function Wait-ForUsableSources {
     param(
         [string]$Day,
         [int]$Attempts,
         [int]$Seconds
     )
+    # Failsafe should NOT block for missing Gov/Tech when AI/Police already exist.
+    # Only wait when nothing usable is on disk yet.
     for ($i = 1; $i -le $Attempts; $i++) {
         $hits = Test-SourceToday -Day $Day
-        $coreReady = $hits.ai -and $hits.gov -and $hits.police_crime
-        Write-Log ("Source check {0}/{1}: ai={2} gov={3} police={4} cyber={5} graph={6} tunnel={7} tech-law={8}" -f `
-            $i, $Attempts, $hits.ai, $hits.gov, $hits.police_crime, $hits.police_cyber, $hits.police_graph, $hits.police_tunnel, $hits.tech_law)
-        if ($coreReady) { return $hits }
+        $usable = Test-AnyUsableSource -Hits $hits
+        Write-Log ("Source check {0}/{1}: ai={2} gov={3} police={4} cyber={5} graph={6} tunnel={7} tech-law={8} usable={9}" -f `
+            $i, $Attempts, $hits.ai, $hits.gov, $hits.police_crime, $hits.police_cyber, $hits.police_graph, $hits.police_tunnel, $hits.tech_law, $usable)
+        if ($usable) { return $hits }
         if ($i -lt $Attempts) {
-            Write-Log ("Waiting {0}s for core sources (ai/gov/police)..." -f $Seconds)
+            Write-Log ("Waiting {0}s for any usable source..." -f $Seconds)
             Start-Sleep -Seconds $Seconds
         }
     }
@@ -119,7 +141,8 @@ $env:GIT_TERMINAL_PROMPT = '0'
 
 # Event-driven callers may overlap (e.g. AI+Gov at 18:00). Wait so both runs
 # complete instead of the second exiting SKIP with stale unified data.
-$mutexWaitMs = if ($EventDriven) { 600000 } else { 0 }
+# Failsafe also waits briefly so it does not race an in-flight event trigger.
+$mutexWaitMs = if ($EventDriven) { 600000 } else { 180000 }
 $script:PushMutex = New-Object System.Threading.Mutex($false, 'Global\NewsToBusinessDailyPush')
 try {
     $script:PushMutexHeld = $script:PushMutex.WaitOne($mutexWaitMs)
@@ -154,24 +177,56 @@ try {
         Write-Log ("Event trigger from '{0}': ai={1} gov={2} police={3} cyber={4} tech-law={5}" -f `
             $FromSource, $hits.ai, $hits.gov, $hits.police_crime, $hits.police_cyber, $hits.tech_law)
     } else {
-        # Evening failsafe: wait briefly for core files if Retry, else short wait.
-        $attempts = if ($Retry) { 12 } else { 6 }
-        $seconds = if ($Retry) { 30 } else { 20 }
-        $hits = Wait-ForCoreSources -Day $Today -Attempts $attempts -Seconds $seconds
-        if (-not ($hits.ai -and $hits.gov -and $hits.police_crime)) {
-            Write-Log 'WARN: core sources still incomplete after wait — syncing whatever is available'
+        # Evening failsafe: sync as soon as ANY usable source exists (do not block on Gov).
+        $attempts = if ($Retry) { 8 } else { 3 }
+        $seconds = if ($Retry) { 20 } else { 15 }
+        $hits = Wait-ForUsableSources -Day $Today -Attempts $attempts -Seconds $seconds
+        if (-not (Test-AnyUsableSource -Hits $hits)) {
+            Write-Log 'WARN: no usable sources after wait — syncing cached/history anyway'
         }
-        if (-not $hits.tech_law) {
-            Write-Log 'INFO: no tech-law content for today (normal when no new law round)'
-        }
+        if (-not $hits.gov) { Write-Log 'INFO: no gov news for today yet (will refresh when Gov DailyPush finishes)' }
+        if (-not $hits.tech_law) { Write-Log 'INFO: no tech-law content for today (normal when no new law round)' }
     }
 
+    Write-Log 'Running Sync-FromSources.ps1'
     $syncArgs = @('-NoProfile', '-ExecutionPolicy', 'Bypass', '-File', $SyncScript)
     if ($FullHistory) { $syncArgs += '-FullHistory' }
-    Write-Log 'Running Sync-FromSources.ps1'
-    & powershell.exe @syncArgs 2>&1 | ForEach-Object { Write-Log ("  sync: {0}" -f $_) }
-    if ($LASTEXITCODE -ne 0) {
-        Write-Log ("ERROR: sync exit={0}" -f $LASTEXITCODE)
+    $syncExit = 1
+    if (Get-Command Invoke-BoundedProcess -ErrorAction SilentlyContinue) {
+        $syncResult = Invoke-BoundedProcess -FilePath 'powershell.exe' -ArgumentList $syncArgs `
+            -WorkingDirectory $Repo -TimeoutSec 900 -OnLine { param($l) Write-Log ("  sync: {0}" -f $l) }
+        if ($syncResult.TimedOut) {
+            Write-Log 'ERROR: Sync-FromSources timed out after 15m — killed'
+            Write-Log 'RESULT=FAIL'
+            $script:ExitCode = 1
+            exit 1
+        }
+        $syncExit = [int]$syncResult.ExitCode
+    } else {
+        # Fallback: stdout/stderr must be different files (Start-Process requirement)
+        $syncOut = Join-Path $env:TEMP ("ntb-sync-{0}.out.log" -f (Get-Date -Format 'yyyyMMddHHmmss'))
+        $syncErr = Join-Path $env:TEMP ("ntb-sync-{0}.err.log" -f (Get-Date -Format 'yyyyMMddHHmmss'))
+        $syncProc = Start-Process -FilePath 'powershell.exe' -ArgumentList $syncArgs `
+            -WorkingDirectory $Repo -PassThru -NoNewWindow `
+            -RedirectStandardOutput $syncOut -RedirectStandardError $syncErr
+        $syncOk = $syncProc.WaitForExit(900000)
+        if (-not $syncOk) {
+            Write-Log 'ERROR: Sync-FromSources timed out after 15m — killing'
+            try { & taskkill.exe /PID $syncProc.Id /T /F 2>$null | Out-Null } catch { }
+            Write-Log 'RESULT=FAIL'
+            $script:ExitCode = 1
+            exit 1
+        }
+        foreach ($f in @($syncOut, $syncErr)) {
+            if (Test-Path -LiteralPath $f) {
+                Get-Content -LiteralPath $f -ErrorAction SilentlyContinue | ForEach-Object { Write-Log ("  sync: {0}" -f $_) }
+                Remove-Item -LiteralPath $f -Force -ErrorAction SilentlyContinue
+            }
+        }
+        $syncExit = [int]$syncProc.ExitCode
+    }
+    if ($syncExit -ne 0) {
+        Write-Log ("ERROR: sync exit={0}" -f $syncExit)
         Write-Log 'RESULT=FAIL'
         $script:ExitCode = 1
         exit 1

@@ -9,6 +9,18 @@ set "LOG=%LOGDIR%\push-%TODAY%.log"
 
 echo [%DATE% %TIME%] PUSH.bat start>> "%LOG%"
 
+REM Non-interactive git + no proxy (Task Scheduler / standalone safety)
+set "GIT_TERMINAL_PROMPT=0"
+set "HTTP_PROXY="
+set "HTTPS_PROXY="
+set "http_proxy="
+set "https_proxy="
+set "ALL_PROXY="
+set "all_proxy="
+set "NO_PROXY=*"
+set "no_proxy=*"
+set "PATH=C:\Program Files\Git\cmd;C:\Program Files\Git\bin;%PATH%"
+
 REM Author env (set by DailyPush.ps1); fallback if task launches PUSH.bat alone
 if not defined GIT_AUTHOR_NAME set "GIT_AUTHOR_NAME=News to Business Bot"
 if not defined GIT_AUTHOR_EMAIL set "GIT_AUTHOR_EMAIL=chirapathleo.saelim@gmail.com"
