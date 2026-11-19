@@ -41,12 +41,14 @@ news-to-business-site/
 
 1. `Sync-FromSources.ps1` copies newest JSON from the topic repos (default last 60 days) and rebuilds `data/feed.json`.
 2. `PUSH.bat` commits changed site/data files and pushes to GitHub Pages.
-3. `DailyPush.ps1` waits for AI/Gov/Police source files, syncs, then pushes.
-4. Task Scheduler:
-   - **18:45** `News-to-Business-DailyPush` (after AI/Gov 18:00)
-   - **20:30** `News-to-Business-RetryPush -Retry` (after Gov-Retry 20:00)
+3. **Primary (event-driven):** after each topic Pages push succeeds, that repo calls
+   `Trigger-AfterSourcePush.ps1 -Source {ai|gov|police|tech-law}` so this unified
+   site updates on every change — not only once in the evening.
+4. **Failsafe (scheduled):**
+   - **18:45** `News-to-Business-DailyPush`
+   - **20:30** `News-to-Business-RetryPush -Retry`
 
-Register the Windows tasks:
+Register the failsafe Windows tasks:
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File .\Register-DailyPushSchedule.ps1
@@ -56,6 +58,12 @@ Manual run (sync + push):
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File .\DailyPush.ps1
+```
+
+Simulate a source-triggered refresh:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\Trigger-AfterSourcePush.ps1 -Source ai
 ```
 
 Sync only:

@@ -1,0 +1,64 @@
+{
+ "case_id": "20261118-cyber-line-01",
+ "title": "กก.5 บก.ป. จับหญิงอายุ 29 ปีที่ลานจอดรถบิ๊กซี อ่อนนุช ตามหมายจับศาลอาญามีนบุรี ข้อหาสนับสนุนฉ้อโกงและเปิดบัญชีให้ผู้อื่นใช้ ในคดีหลอกลงทุนร้านค้าออนไลน์ผ่าน TikTok ผู้เสียหายโอน 339,945 บาท",
+ "generated_at": "2026-11-19T01:48:00.139Z",
+ "node_count": 10,
+ "edge_count": 9,
+ "relations": [
+  {
+   "label": "จับโดย",
+   "target_id": "30_Entities/Units/กก.5 บก.ป.",
+   "target_title": "กก.5 บก.ป.",
+   "direction": "out"
+  },
+  {
+   "label": "หมายจากศาล",
+   "target_id": "30_Entities/Units/ศาลอาญามีนบุรี",
+   "target_title": "ศาลอาญามีนบุรี",
+   "direction": "out"
+  },
+  {
+   "label": "แจ้งโดย",
+   "target_id": "30_Entities/Units/สน.มีนบุรี",
+   "target_title": "สน.มีนบุรี",
+   "direction": "out"
+  },
+  {
+   "label": "เกิดที่",
+   "target_id": "30_Entities/Places/แขวงพระโขนงเหนือ เขตวัฒนา กรุงเทพมหานคร",
+   "target_title": "แขวงพระโขนงเหนือ เขตวัฒนา กรุงเทพมหานคร",
+   "direction": "out"
+  },
+  {
+   "label": "เกี่ยวข้องกับบุคคล",
+   "target_id": "30_Entities/บุคคล/ณัฐศักดิ์ เชาวนาศัย",
+   "target_title": "ณัฐศักดิ์ เชาวนาศัย",
+   "direction": "out"
+  },
+  {
+   "label": "สั่งการโดย",
+   "target_id": "30_Entities/บุคคล/พัฒนศักดิ์ บุบผาสุวรรณ",
+   "target_title": "พัฒนศักดิ์ บุบผาสุวรรณ",
+   "direction": "out"
+  },
+  {
+   "label": "สั่งการโดย",
+   "target_id": "30_Entities/บุคคล/ธนวัฒน์ หิ้นยกฮิ่น",
+   "target_title": "ธนวัฒน์ หิ้นยกฮิ่น",
+   "direction": "out"
+  },
+  {
+   "label": "สั่งการโดย",
+   "target_id": "30_Entities/บุคคล/นพพิณฑ์ แก้วอินไชย",
+   "target_title": "นพพิณฑ์ แก้วอินไชย",
+   "direction": "out"
+  },
+  {
+   "label": "ประเภท",
+   "target_id": "40_CrimeTypes/อาชญากรรมไซเบอร์และออนไลน์",
+   "target_title": "อาชญากรรมไซเบอร์และออนไลน์",
+   "direction": "out"
+  }
+ ],
+ "svg": "graphs/20261118-cyber-line-01.svg"
+}

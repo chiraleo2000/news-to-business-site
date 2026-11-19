@@ -171,6 +171,22 @@
     {
      "name": "The Hacker News",
      "url": "https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html"
+    },
+    {
+     "name": "ThaiCERT",
+     "url": "https://www.thaicert.or.th/2026/11/18/%e0%b9%81%e0%b8%88%e0%b9%89%e0%b8%87%e0%b9%80%e0%b8%95%e0%b8%b7%e0%b8%ad%e0%b8%99%e0%b8%8a%e0%b9%88%e0%b8%ad%e0%b8%87%e0%b9%82%e0%b8%ab%e0%b8%a7%e0%b9%88-java4shell-%e0%b9%83%e0%b8%99-openjdk/"
+    },
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/cisa-urges-immediate-patching-of.html"
+    },
+    {
+     "name": "TechTalkThai",
+     "url": "https://www.techtalkthai.com/java4shell-openjdk-flaw-enables-remote-code-execution-on-specific-cpus/"
+    },
+    {
+     "name": "กรุงเทพธุรกิจ",
+     "url": "https://www.bangkokbiznews.com/world/economics/1261326"
     }
    ],
    "actions_public": [
@@ -225,6 +241,22 @@
     {
      "name": "The Hacker News",
      "url": "https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html"
+    },
+    {
+     "name": "ThaiCERT",
+     "url": "https://www.thaicert.or.th/2026/11/18/%e0%b9%81%e0%b8%88%e0%b9%89%e0%b8%87%e0%b9%80%e0%b8%95%e0%b8%b7%e0%b8%ad%e0%b8%99%e0%b8%8a%e0%b9%88%e0%b8%ad%e0%b8%87%e0%b9%82%e0%b8%ab%e0%b8%a7%e0%b9%88-java4shell-%e0%b9%83%e0%b8%99-openjdk/"
+    },
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/cisa-urges-immediate-patching-of.html"
+    },
+    {
+     "name": "TechTalkThai",
+     "url": "https://www.techtalkthai.com/java4shell-openjdk-flaw-enables-remote-code-execution-on-specific-cpus/"
+    },
+    {
+     "name": "กรุงเทพธุรกิจ",
+     "url": "https://www.bangkokbiznews.com/world/economics/1261326"
     }
    ],
    "tags_struct": {
@@ -629,7 +661,16 @@
    "is_clarification": false,
    "content": "BleepingComputer รายงานว่าศาลสหรัฐฯ พิพากษาจำคุก Tyler Robert Buchanan ชายชาวอังกฤษ ซึ่งสื่อระบุว่าเป็นแกนนำคนหนึ่งของเครือข่ายอาชญากรไซเบอร์ Scattered Spider เป็นเวลา 6 ปี ในความผิดเกี่ยวกับการขโมยสกุลเงินดิจิทัลและการสมคบกันเจาะระบบบริษัทหลายแห่ง. จำเลยรับสารภาพเมื่อเดือนเมษายนที่ผ่านมา หลังถูกจับที่เมือง Palma de Mallorca ประเทศสเปน เมื่อเดือนมิถุนายน 2567 และถูกควบคุมตัวในสหรัฐฯ ตั้งแต่เดือนเมษายน 2568.\n\nเอกสารของศาลระบุว่าระหว่างเดือนกันยายน 2564 ถึงเมษายน 2566 จำเลยและพวกส่งข้อความ SMS ฟิชชิงหลายร้อยข้อความไปยังโทรศัพท์ของพนักงานบริษัทเป้าหมาย โดยแอบอ้างเป็นบริษัทนั้นเองหรือผู้รับจ้างด้านไอที เพื่อหลอกให้กรอกรหัสผ่านและข้อมูลส่วนบุคคลลงในหน้าเว็บปลอมที่เลียนแบบเว็บไซต์ของนายจ้าง. เหยื่อครอบคลุมบริษัทโทรคมนาคม เทคโนโลยี การเอาต์ซอร์สธุรกิจ บันเทิง ซัพพลายเออร์ไอที ผู้ให้บริการสกุลเงินเสมือน และบุคคลทั่วไป.\n\nข้อมูลที่ขโมยได้ถูกนำไปใช้เข้าควบคุมบัญชีและกระเป๋าคริปโตของเหยื่อผ่านวิธีสลับซิม (SIM swapping) คือการโอนเบอร์โทรศัพท์ของเหยื่อไปยังซิมที่คนร้ายควบคุม ทำให้ขโมยสกุลเงินดิจิทัลไปได้มากกว่า 11.6 ล้านดอลลาร์สหรัฐ. อัยการระบุในบันทึกประกอบการพิพากษาว่าการโจรกรรมส่งผลร้ายแรงต่อชีวิตของเหยื่อหลายราย และกระทรวงยุติธรรมสหรัฐฯ ระบุว่าพบรายชื่อและที่อยู่ของเหยื่อ รวมถึงไฟล์ที่เก็บข้อมูลเข้าถึงกระเป๋าคริปโตในอุปกรณ์ดิจิทัลที่บ้านพักของจำเลยในสกอตแลนด์.\n\nผู้ร่วมขบวนการอีกสามคนถูกตั้งข้อหาในเดือนพฤศจิกายน 2567 และกำลังรับโทษจำคุกหลายปีหลังรับสารภาพ ส่วน Noah Michael Urban สมาชิกสำคัญอีกคนถูกพิพากษาจำคุก 10 ปี. สื่อระบุว่า Scattered Spider เป็นเครือข่ายหลวม ๆ ของผู้ก่อเหตุที่พูดภาษาอังกฤษ ติดต่อกันผ่าน Telegram, Discord และฟอรัมแฮกเกอร์ และเคยร่วมมือกับปฏิบัติการแรนซัมแวร์หลายกลุ่มตั้งแต่ต้นปี 2566.\n\nประเด็นที่องค์กรและประชาชนในไทยควรรับรู้คือ กลโกงลักษณะนี้ไม่ต้องอาศัยช่องโหว่ทางเทคนิค แต่อาศัยการหลอกให้เชื่อว่าข้อความมาจากองค์กรที่รู้จัก และใช้เบอร์โทรศัพท์เป็นกุญแจเข้าถึงบัญชีการเงิน. แหล่งข่าวไม่ได้ระบุผู้เสียหายในประเทศไทย.",
    "source_url": "https://www.bleepingcomputer.com/news/security/british-scattered-spider-hacker-sentenced-to-6-years-in-prison/",
-   "corroborating_sources": [],
+   "corroborating_sources": [
+    {
+     "name": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/18/british-hackers-face-prison-for-gta-6-data-breach-and-crypto-thefts/"
+    },
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/british-scattered-spider-hacker-sentenced-to-6-years-in-prison/"
+    }
+   ],
    "actions_public": [
     "อย่ากรอกรหัสผ่านจากลิงก์ใน SMS แม้ข้อความจะอ้างว่ามาจากองค์กรที่รู้จัก",
     "หากโทรศัพท์ขาดสัญญาณผิดปกติ ควรติดต่อผู้ให้บริการมือถือทันทีเพราะอาจเป็นการสลับซิม"
@@ -669,6 +710,14 @@
    "references": [
     {
      "name": "แหล่งหลัก",
+     "url": "https://www.bleepingcomputer.com/news/security/british-scattered-spider-hacker-sentenced-to-6-years-in-prison/"
+    },
+    {
+     "name": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/18/british-hackers-face-prison-for-gta-6-data-breach-and-crypto-thefts/"
+    },
+    {
+     "name": "BleepingComputer",
      "url": "https://www.bleepingcomputer.com/news/security/british-scattered-spider-hacker-sentenced-to-6-years-in-prison/"
     }
    ],

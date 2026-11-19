@@ -1,12 +1,40 @@
 {
- "generated_at": "2026-11-18T09:25:50.149Z",
+ "generated_at": "2026-11-19T06:17:10.334Z",
  "schema_version": 1,
  "default_range": "all",
  "days": [
   {
+   "date": "2026-11-19",
+   "status": "published",
+   "total": 35,
+   "crime_file": "2026-11-19_crime.json",
+   "downloads": [
+    {
+     "label": "PDF สรุปข่าว 2026-11-19",
+     "path": "downloads/2026-11-19_crime.pdf",
+     "kind": "pdf"
+    },
+    {
+     "label": "Infographic 2026-11-19",
+     "path": "downloads/2026-11-19_infographic.png",
+     "kind": "image"
+    },
+    {
+     "label": "PDF ข่าวไซเบอร์ 2026-11-19",
+     "path": "downloads/2026-11-19_cyber.pdf",
+     "kind": "pdf"
+    },
+    {
+     "label": "Infographic ไซเบอร์ 2026-11-19",
+     "path": "downloads/2026-11-19_infographic_cyber.png",
+     "kind": "image"
+    }
+   ]
+  },
+  {
    "date": "2026-11-18",
    "status": "published",
-   "total": 33,
+   "total": 36,
    "crime_file": "2026-11-18_crime.json",
    "downloads": [
     {
@@ -15,8 +43,18 @@
      "kind": "pdf"
     },
     {
+     "label": "PDF จาก LINE 2026-11-18",
+     "path": "downloads/2026-11-18_crime_line.pdf",
+     "kind": "pdf"
+    },
+    {
      "label": "Infographic 2026-11-18",
      "path": "downloads/2026-11-18_infographic.png",
+     "kind": "image"
+    },
+    {
+     "label": "Infographic LINE 2026-11-18",
+     "path": "downloads/2026-11-18_infographic_line.png",
      "kind": "image"
     },
     {
@@ -29,8 +67,7 @@
      "path": "downloads/2026-11-18_infographic_cyber.png",
      "kind": "image"
     }
-   ],
-   "cyber_file": "2026-11-18_cyber.json"
+   ]
   },
   {
    "date": "2026-11-17",
@@ -58,8 +95,7 @@
      "path": "downloads/2026-11-17_infographic_cyber.png",
      "kind": "image"
     }
-   ],
-   "cyber_file": "2026-11-17_cyber.json"
+   ]
   },
   {
    "date": "2026-11-16",
@@ -87,8 +123,7 @@
      "path": "downloads/2026-11-16_infographic_cyber.png",
      "kind": "image"
     }
-   ],
-   "cyber_file": "2026-11-16_cyber.json"
+   ]
   },
   {
    "date": "2026-11-15",
@@ -116,8 +151,7 @@
      "path": "downloads/2026-11-15_infographic_cyber.png",
      "kind": "image"
     }
-   ],
-   "cyber_file": "2026-11-15_cyber.json"
+   ]
   },
   {
    "date": "2026-11-14",

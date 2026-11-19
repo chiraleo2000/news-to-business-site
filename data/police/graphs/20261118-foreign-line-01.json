@@ -1,0 +1,58 @@
+{
+ "case_id": "20261118-foreign-line-01",
+ "title": "ตม.นครราชสีมาจับชายอินเดียอายุ 45 ปีขี่จักรยานยนต์เร่ขายไอศกรีมที่ ต.กลางดง ปากช่อง พบอยู่เกินกำหนด 202 วันและไม่มีใบอนุญาตทำงาน แจ้ง 3 ข้อหา ส่ง สภ.กลางดง",
+ "generated_at": "2026-11-19T01:48:00.139Z",
+ "node_count": 9,
+ "edge_count": 8,
+ "relations": [
+  {
+   "label": "จับโดย",
+   "target_id": "30_Entities/Units/ตม.จว.นครราชสีมา",
+   "target_title": "ตม.จว.นครราชสีมา",
+   "direction": "out"
+  },
+  {
+   "label": "สั่งการโดย",
+   "target_id": "30_Entities/Units/กองบังคับการตรวจคนเข้าเมือง 4 (บก.ตม.4)",
+   "target_title": "กองบังคับการตรวจคนเข้าเมือง 4 (บก.ตม.4)",
+   "direction": "out"
+  },
+  {
+   "label": "แจ้งโดย",
+   "target_id": "30_Entities/Units/สภ.กลางดง",
+   "target_title": "สภ.กลางดง",
+   "direction": "out"
+  },
+  {
+   "label": "เกิดที่",
+   "target_id": "30_Entities/Places/ซอยเทศบาล 22 ต.กลางดง อ.ปากช่อง จ.นครราชสีมา",
+   "target_title": "ซอยเทศบาล 22 ต.กลางดง อ.ปากช่อง จ.นครราชสีมา",
+   "direction": "out"
+  },
+  {
+   "label": "เกี่ยวข้องกับบุคคล",
+   "target_id": "30_Entities/บุคคล/ฤชุภัทร หลาวทอง",
+   "target_title": "ฤชุภัทร หลาวทอง",
+   "direction": "out"
+  },
+  {
+   "label": "เกี่ยวข้องกับบุคคล",
+   "target_id": "30_Entities/บุคคล/อชิรพงศ์ ประจง",
+   "target_title": "อชิรพงศ์ ประจง",
+   "direction": "out"
+  },
+  {
+   "label": "เกี่ยวข้องกับบุคคล",
+   "target_id": "30_Entities/บุคคล/นพศิลป์ พูลสวัสดิ์",
+   "target_title": "นพศิลป์ พูลสวัสดิ์",
+   "direction": "out"
+  },
+  {
+   "label": "ประเภท",
+   "target_id": "40_CrimeTypes/อาชญากรรมที่เกี่ยวข้องกับนักท่องเที่ยวและชาวต่างชาติ",
+   "target_title": "อาชญากรรมที่เกี่ยวข้องกับนักท่องเที่ยวและชาวต่างชาติ",
+   "direction": "out"
+  }
+ ],
+ "svg": "graphs/20261118-foreign-line-01.svg"
+}
