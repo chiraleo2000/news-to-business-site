@@ -1,0 +1,46 @@
+{
+ "case_id": "20261119-cyber-line-03",
+ "title": "ตำรวจชัยภูมิซ้อนแผนจับชายสัญชาติจีนรับเงินแก๊งคอลเซ็นเตอร์ที่บ้านผู้เสียหายหญิงวัย 79 ปี อ.เทพสถิต หลังถูกหลอกโอน 3 ล้านบาท ไรเดอร์ที่ถูกควบคุมตัวชี้แจงว่าเป็นเพียงผู้รับจ้างขับรถ",
+ "generated_at": "2026-11-20T01:48:55.211Z",
+ "node_count": 7,
+ "edge_count": 6,
+ "relations": [
+  {
+   "label": "จับโดย",
+   "target_id": "30_Entities/Units/ภ.จว.ชัยภูมิ",
+   "target_title": "ภ.จว.ชัยภูมิ",
+   "direction": "out"
+  },
+  {
+   "label": "สืบสวนโดย",
+   "target_id": "30_Entities/Units/สภ.บำเหน็จณรงค์",
+   "target_title": "สภ.บำเหน็จณรงค์",
+   "direction": "out"
+  },
+  {
+   "label": "แจ้งโดย",
+   "target_id": "30_Entities/Units/ศูนย์วอร์รูมอาชญากรรมทางเทคโนโลยี สำนักงานตำรวจแห่งชาติ",
+   "target_title": "ศูนย์วอร์รูมอาชญากรรมทางเทคโนโลยี สำนักงานตำรวจแห่งชาติ",
+   "direction": "out"
+  },
+  {
+   "label": "เกิดที่",
+   "target_id": "30_Entities/Places/อ.เทพสถิต จ.ชัยภูมิ",
+   "target_title": "อ.เทพสถิต จ.ชัยภูมิ",
+   "direction": "out"
+  },
+  {
+   "label": "เกี่ยวข้องกับบุคคล",
+   "target_id": "30_Entities/บุคคล/สุจริต ปาณเล็ก",
+   "target_title": "สุจริต ปาณเล็ก",
+   "direction": "out"
+  },
+  {
+   "label": "ประเภท",
+   "target_id": "40_CrimeTypes/อาชญากรรมไซเบอร์และออนไลน์",
+   "target_title": "อาชญากรรมไซเบอร์และออนไลน์",
+   "direction": "out"
+  }
+ ],
+ "svg": "graphs/20261119-cyber-line-03.svg"
+}

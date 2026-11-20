@@ -1,0 +1,58 @@
+{
+ "case_id": "20261119-drug-line-01",
+ "title": "ตำรวจ สภ.วัดโบสถ์ ไล่ล่ากระบะฝ่าด่านข้ามจังหวัด จับชายอายุ 27 ปีที่อุตรดิตถ์ ยึดยาบ้า 32 กระสอบกว่า 8 ล้านเม็ด ผบช.ภ.6 เตือนเส้นทางลำเลียงสายใหม่ผ่านพิษณุโลก",
+ "generated_at": "2026-11-20T01:48:55.211Z",
+ "node_count": 9,
+ "edge_count": 8,
+ "relations": [
+  {
+   "label": "จับโดย",
+   "target_id": "30_Entities/Units/สภ.วัดโบสถ์",
+   "target_title": "สภ.วัดโบสถ์",
+   "direction": "out"
+  },
+  {
+   "label": "สั่งการโดย",
+   "target_id": "30_Entities/Units/ภ.6",
+   "target_title": "ภ.6",
+   "direction": "out"
+  },
+  {
+   "label": "แจ้งโดย",
+   "target_id": "30_Entities/Units/สภ.ทองแสนขัน",
+   "target_title": "สภ.ทองแสนขัน",
+   "direction": "out"
+  },
+  {
+   "label": "เกิดที่",
+   "target_id": "30_Entities/Places/อ.วัดโบสถ์ จ.พิษณุโลก",
+   "target_title": "อ.วัดโบสถ์ จ.พิษณุโลก",
+   "direction": "out"
+  },
+  {
+   "label": "เกิดที่",
+   "target_id": "30_Entities/Places/อ.ทองแสนขัน จ.อุตรดิตถ์",
+   "target_title": "อ.ทองแสนขัน จ.อุตรดิตถ์",
+   "direction": "out"
+  },
+  {
+   "label": "แจ้งโดย",
+   "target_id": "30_Entities/บุคคล/วรวัฒน์ มะลิ",
+   "target_title": "วรวัฒน์ มะลิ",
+   "direction": "out"
+  },
+  {
+   "label": "เกี่ยวข้องกับบุคคล",
+   "target_id": "30_Entities/บุคคล/โยธิน ยากองโค",
+   "target_title": "โยธิน ยากองโค",
+   "direction": "out"
+  },
+  {
+   "label": "ประเภท",
+   "target_id": "40_CrimeTypes/ยาเสพติด",
+   "target_title": "ยาเสพติด",
+   "direction": "out"
+  }
+ ],
+ "svg": "graphs/20261119-drug-line-01.svg"
+}
