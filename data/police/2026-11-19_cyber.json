@@ -131,6 +131,10 @@
     {
      "name": "The Hacker News",
      "url": "https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html"
+    },
+    {
+     "name": "CISA KEV 20 พ.ย. 2569",
+     "url": "https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog"
     }
    ],
    "actions_public": [
@@ -177,6 +181,10 @@
     {
      "name": "The Hacker News",
      "url": "https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html"
+    },
+    {
+     "name": "CISA KEV 20 พ.ย. 2569",
+     "url": "https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog"
     }
    ],
    "tags_struct": {

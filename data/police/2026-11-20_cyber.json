@@ -129,6 +129,10 @@
     {
      "name": "The Hacker News",
      "url": "https://thehackernews.com/2026/11/php-fixes-7-critical-flaws-including.html"
+    },
+    {
+     "name": "ThaiCERT 20 พ.ย. 2569 (ฉบับสรุป)",
+     "url": "https://www.thaicert.or.th/2026/11/20/php-%e0%b8%ad%e0%b8%ad%e0%b8%81%e0%b8%ad%e0%b8%b1%e0%b8%9b%e0%b9%80%e0%b8%94%e0%b8%95%e0%b9%80%e0%b8%9e%e0%b8%b7%e0%b9%88%e0%b8%ad%e0%b9%81%e0%b8%81%e0%b9%89%e0%b9%84%e0%b8%82-7-%e0%b8%8a%e0%b9%88/"
     }
    ],
    "actions_public": [
@@ -175,6 +179,10 @@
     {
      "name": "The Hacker News",
      "url": "https://thehackernews.com/2026/11/php-fixes-7-critical-flaws-including.html"
+    },
+    {
+     "name": "ThaiCERT 20 พ.ย. 2569 (ฉบับสรุป)",
+     "url": "https://www.thaicert.or.th/2026/11/20/php-%e0%b8%ad%e0%b8%ad%e0%b8%81%e0%b8%ad%e0%b8%b1%e0%b8%9b%e0%b9%80%e0%b8%94%e0%b8%95%e0%b9%80%e0%b8%9e%e0%b8%b7%e0%b9%88%e0%b8%ad%e0%b9%81%e0%b8%81%e0%b9%89%e0%b9%84%e0%b8%82-7-%e0%b8%8a%e0%b9%88/"
     }
    ],
    "tags_struct": {
@@ -311,7 +319,16 @@
    "is_clarification": false,
    "content": "The Hacker News รายงานเมื่อ 19 พฤศจิกายน 2569 ว่า Broadcom เจ้าของ VMware ออกประกาศแก้ช่องโหว่ร้ายแรงใน VMware vCenter หมายเลข CVE-2026-123890 คะแนน CVSS 9.8 ซึ่งทำให้ผู้โจมตีที่เข้าถึงเครือข่ายได้ข้ามการยืนยันตัวตนและเข้าถึงระบบโดยไม่ได้รับอนุญาต ช่องโหว่อยู่ใน VMware Directory Service vCenter คือคอนโซลกลางที่องค์กรใช้จัดการเครื่องแม่ข่ายและเครื่องเสมือนทั้งหมด.\n\nตามรายงาน Broadcom ระบุว่าการแก้ไขนี้เข้าข่ายการเปลี่ยนแปลงฉุกเฉิน และเร่งให้องค์กรปรึกษาทีมความปลอดภัยทันที ช่องโหว่มีใน vCenter 8.0, 9.0 และ 9.1 รวมถึงรุ่นที่มาในชุด VMware Cloud Foundation, vSphere Foundation และผลิตภัณฑ์กลุ่มโทรคมนาคม โดยไม่ขึ้นกับการเปิดใช้ Enhanced Linked Mode ส่วนรุ่นเก่าที่หมดระยะสนับสนุน เช่น vSphere 6.5, 6.7 และ 7.0 ให้ถือว่าได้รับผลกระทบ Broadcom ไม่ได้ระบุวิธีแก้ชั่วคราว.\n\nThe Hacker News อ้างการวิเคราะห์ของทีมข่าวกรองภัยคุกคามของ Google ที่เผยแพร่ 20 พฤศจิกายน ว่าช่องโหว่ถูกใช้แบบ zero-day มากกว่าสองเดือนก่อนมีแพตช์ โดยผู้กระทำที่ Google สงสัยว่าเป็นกลุ่มจารกรรมเชื่อมโยงจีน ติดตามในชื่อ Armory Castle ใช้ช่องโหว่ช่วงต้นเดือนกันยายนเพื่อยกระดับเป็นผู้ดูแล vCenter ภายในเครือข่ายที่กลุ่มเจาะเข้าไปได้ก่อนแล้ว Mandiant ซึ่งเป็นบริษัทในเครือ Google เป็นผู้รายงานช่องโหว่ การระบุกลุ่มนี้เป็นการประเมินของบริษัทเอกชน ไม่ใช่ข้อยุติทางกฎหมาย.\n\nรายงานระบุว่านี่เป็นช่องโหว่ข้ามการยืนยันตัวตนระดับร้ายแรงครั้งที่สองใน VMware Directory Service ในปีนี้ ต่อจากชุดที่แพตช์เมื่อ 29 กรกฎาคม และบริษัทรับมือเหตุการณ์ในเยอรมนีเคยประเมินว่าช่องโหว่ชุดเดิมถูกโจมตีหลังเปิดเผยเพียงห้าวัน กระทบราว 361 ที่อยู่ IP ใน 47 ประเทศ การอัปเดตครั้งนี้เป็นแบบสะสมและติดตั้งผ่าน Quick Patch ไม่ได้ เครื่องเสมือนยังทำงานต่อระหว่างอัปเดต แต่การเข้าถึงส่วนจัดการจะหยุดชั่วคราว.\n\nข่าวนี้สำคัญต่อหน่วยงานและองค์กรไทยที่ใช้ระบบเสมือนของ VMware เป็นโครงสร้างพื้นฐานหลัก แหล่งข่าวไม่ได้ระบุเหยื่อในไทยหรือภูมิภาค.",
    "source_url": "https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html",
-   "corroborating_sources": [],
+   "corroborating_sources": [
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html"
+    },
+    {
+     "name": "CISA KEV 20 พ.ย. 2569",
+     "url": "https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog"
+    }
+   ],
    "actions_public": [
     "ประชาชนทั่วไปไม่ต้องดำเนินการ เรื่องนี้เกี่ยวกับผู้ดูแลระบบเสมือนขององค์กร"
    ],
@@ -353,6 +370,14 @@
     {
      "name": "แหล่งหลัก",
      "url": "https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html"
+    },
+    {
+     "name": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html"
+    },
+    {
+     "name": "CISA KEV 20 พ.ย. 2569",
+     "url": "https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog"
     }
    ],
    "tags_struct": {
@@ -750,7 +775,12 @@
    "is_clarification": false,
    "content": "The Hacker News รายงานเมื่อ 19 พฤศจิกายน 2569 ว่าบริษัท N-able ผู้ให้บริการซอฟต์แวร์บริหารระบบไอทีและความปลอดภัยอีเมล เปิดเผยว่าผู้กระทำที่ยังไม่ทราบตัวตนเข้าถึงเซิร์ฟเวอร์หนึ่งในระบบ Mail Assure และ SpamExperts Hosted Cloud โดยไม่ได้รับอนุญาต จนบริษัทต้องปิดส่วนติดต่อจัดการและ API.\n\nตามรายงาน N-able เริ่มสอบสวนการหยุดชะงักของบริการเมื่อ 16 พฤศจิกายน 2569 ตอนแรกคิดว่าเกิดจากการตั้งค่าแพลตฟอร์มและการพึ่งพาบริการ แต่ต่อมาพบว่าการหยุดชะงักเกิดจากเหตุด้านความปลอดภัย บริษัทระบุว่าได้ดำเนินมาตรการลดภัยคุกคามและเสริมความแข็งแรงของบริการเพื่อลดโอกาสเกิดซ้ำ การสอบสวนยังดำเนินอยู่ และขณะนี้ยังไม่มีหลักฐานว่าข้อมูลลูกค้า รวมถึงกล่องจดหมายของผู้เช่าระบบ ถูกเข้าถึง.\n\nบริการรับส่งอีเมลหลักและการกรองอีเมลขาเข้าขาออกยังทำงาน แต่พอร์ทัลจัดการ API ระบบกักกันอีเมล และการบันทึกเหตุการณ์ยังออฟไลน์ระหว่างการกู้คืนอย่างปลอดภัย บริษัทติดต่อพันธมิตรโดยตรงเพื่อแจ้งว่าต้องดำเนินการหรือไม่ และระบุว่าการกู้ระบบมีความคืบหน้าต่อเนื่อง ข้อมูลล่าสุด ณ 19 พฤศจิกายน เวลา 8.00 น. ตามเวลาสากล ระบุว่ายังกู้คืนไม่เสร็จ พาดหัวของสื่อระบุว่าบริการหยุดชะงักใน 3 ภูมิภาค.\n\nThe Hacker News ระบุชัดว่าเหตุนี้ไม่เกี่ยวข้องกับช่องโหว่ชุด Able2Shell, 4EverAble2Shell และ Agent2Shell ใน N-central ที่เป็นข่าวก่อนหน้า ดังนั้นจึงเป็นคนละเหตุการณ์กับข่าวช่องโหว่ N-central แม้จะเป็นบริษัทเดียวกัน แหล่งข่าวไม่ได้ระบุชื่อกลุ่มผู้โจมตีหรือวิธีเจาะระบบ.\n\nเหตุนี้เป็นตัวอย่างความเสี่ยงห่วงโซ่อุปทานของบริการความปลอดภัยแบบคลาวด์ ผู้ให้บริการไอทีในไทยที่ใช้ Mail Assure หรือ SpamExperts กรองอีเมลให้ลูกค้าควรตรวจข้อมูลที่ N-able ส่งถึงพันธมิตร แหล่งข่าวไม่ได้ระบุผู้ได้รับผลกระทบในไทย.",
    "source_url": "https://thehackernews.com/2026/11/n-able-confirms-hackers-accessed-cloud.html",
-   "corroborating_sources": [],
+   "corroborating_sources": [
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/microsoft/n-able-says-recent-security-breach-led-to-major-service-outage/"
+    }
+   ],
    "actions_public": [
     "ประชาชนทั่วไปไม่ต้องดำเนินการ เรื่องนี้เกี่ยวกับผู้ให้บริการไอทีที่ใช้บริการ N-able"
    ],
@@ -790,6 +820,10 @@
     {
      "name": "แหล่งหลัก",
      "url": "https://thehackernews.com/2026/11/n-able-confirms-hackers-accessed-cloud.html"
+    },
+    {
+     "name": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/microsoft/n-able-says-recent-security-breach-led-to-major-service-outage/"
     }
    ],
    "tags_struct": {
