@@ -1,0 +1,64 @@
+{
+ "case_id": "20261120-cyber-line-03",
+ "title": "บก.ปพ. จับชายอายุ 29 ปีที่ลานจอดรถ เขตปทุมวัน ตามหมายจับศาลกระบี่ คดีบัญชีม้าแก๊งหลอกลงทุนทำกิจกรรมออนไลน์ ผู้เสียหายสูญกว่า 7 แสนบาท ผู้ต้องหาปฏิเสธ",
+ "generated_at": "2026-11-21T01:48:12.499Z",
+ "node_count": 10,
+ "edge_count": 9,
+ "relations": [
+  {
+   "label": "จับโดย",
+   "target_id": "30_Entities/Units/บก.ปพ.",
+   "target_title": "บก.ปพ.",
+   "direction": "out"
+  },
+  {
+   "label": "สั่งการโดย",
+   "target_id": "30_Entities/Units/บช.ก.",
+   "target_title": "บช.ก.",
+   "direction": "out"
+  },
+  {
+   "label": "หมายจากศาล",
+   "target_id": "30_Entities/Units/ศาลจังหวัดกระบี่",
+   "target_title": "ศาลจังหวัดกระบี่",
+   "direction": "out"
+  },
+  {
+   "label": "แจ้งโดย",
+   "target_id": "30_Entities/Units/สภ.อ่าวลึก",
+   "target_title": "สภ.อ่าวลึก",
+   "direction": "out"
+  },
+  {
+   "label": "เกิดที่",
+   "target_id": "30_Entities/Places/แขวงวังใหม่ เขตปทุมวัน กรุงเทพมหานคร",
+   "target_title": "แขวงวังใหม่ เขตปทุมวัน กรุงเทพมหานคร",
+   "direction": "out"
+  },
+  {
+   "label": "สั่งการโดย",
+   "target_id": "30_Entities/บุคคล/ณัฐศักดิ์ เชาวนาศัย",
+   "target_title": "ณัฐศักดิ์ เชาวนาศัย",
+   "direction": "out"
+  },
+  {
+   "label": "สั่งการโดย",
+   "target_id": "30_Entities/บุคคล/อรุณ วชิรศรีสุกัญญา",
+   "target_title": "อรุณ วชิรศรีสุกัญญา",
+   "direction": "out"
+  },
+  {
+   "label": "สั่งการโดย",
+   "target_id": "30_Entities/บุคคล/วิฑูรย์ เกื้อสกุล",
+   "target_title": "วิฑูรย์ เกื้อสกุล",
+   "direction": "out"
+  },
+  {
+   "label": "ประเภท",
+   "target_id": "40_CrimeTypes/อาชญากรรมไซเบอร์และออนไลน์",
+   "target_title": "อาชญากรรมไซเบอร์และออนไลน์",
+   "direction": "out"
+  }
+ ],
+ "svg": "graphs/20261120-cyber-line-03.svg"
+}

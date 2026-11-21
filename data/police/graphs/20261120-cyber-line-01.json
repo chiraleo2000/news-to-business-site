@@ -1,0 +1,58 @@
+{
+ "case_id": "20261120-cyber-line-01",
+ "title": "กองปราบจับชายอายุ 33 ปีที่ปทุมธานี ตามหมายจับศาลเพชรบูรณ์ ตำรวจระบุเป็นมือขวาหัวหน้าแก๊งคอลเซ็นเตอร์ฐานปอยเปต ใช้ AI ปลอมหน้าและเสียงตำรวจวิดีโอคอลหลอกเหยื่อ",
+ "generated_at": "2026-11-21T01:48:12.499Z",
+ "node_count": 9,
+ "edge_count": 8,
+ "relations": [
+  {
+   "label": "จับโดย",
+   "target_id": "30_Entities/Units/บก.ป.",
+   "target_title": "บก.ป.",
+   "direction": "out"
+  },
+  {
+   "label": "สั่งการโดย",
+   "target_id": "30_Entities/Units/บช.ก.",
+   "target_title": "บช.ก.",
+   "direction": "out"
+  },
+  {
+   "label": "หมายจากศาล",
+   "target_id": "30_Entities/Units/ศาลจังหวัดเพชรบูรณ์",
+   "target_title": "ศาลจังหวัดเพชรบูรณ์",
+   "direction": "out"
+  },
+  {
+   "label": "แจ้งโดย",
+   "target_id": "30_Entities/Units/สภ.เมืองเพชรบูรณ์",
+   "target_title": "สภ.เมืองเพชรบูรณ์",
+   "direction": "out"
+  },
+  {
+   "label": "สืบสวนโดย",
+   "target_id": "30_Entities/Units/ศูนย์ต่อต้านการฉ้อโกงออนไลน์ (ACSC)",
+   "target_title": "ศูนย์ต่อต้านการฉ้อโกงออนไลน์ (ACSC)",
+   "direction": "out"
+  },
+  {
+   "label": "เกิดที่",
+   "target_id": "30_Entities/Places/ต.คลองสาม อ.คลองหลวง จ.ปทุมธานี",
+   "target_title": "ต.คลองสาม อ.คลองหลวง จ.ปทุมธานี",
+   "direction": "out"
+  },
+  {
+   "label": "เกี่ยวข้องกับบุคคล",
+   "target_id": "30_Entities/บุคคล/ณัฐศักดิ์ เชาวนาศัย",
+   "target_title": "ณัฐศักดิ์ เชาวนาศัย",
+   "direction": "out"
+  },
+  {
+   "label": "ประเภท",
+   "target_id": "40_CrimeTypes/อาชญากรรมไซเบอร์และออนไลน์",
+   "target_title": "อาชญากรรมไซเบอร์และออนไลน์",
+   "direction": "out"
+  }
+ ],
+ "svg": "graphs/20261120-cyber-line-01.svg"
+}
