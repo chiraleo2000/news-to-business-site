@@ -1,10 +1,10 @@
 ﻿{
-    "generated_at":  "2026-11-23T09:31:02.8193743+07:00",
+    "generated_at":  "2026-11-23T10:38:57.3474644+07:00",
     "topics":  [
                    {
                        "id":  "ai",
                        "label":  "AI News",
-                       "count":  980
+                       "count":  990
                    },
                    {
                        "id":  "gov",
