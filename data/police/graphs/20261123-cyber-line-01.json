@@ -1,0 +1,82 @@
+{
+ "case_id": "20261123-cyber-line-01",
+ "title": "กก.5 บก.ปพ. บช.ก. จับหญิงอายุ 21 ปีที่ธัญบุรี ปทุมธานี ตามหมายจับศาลนนทบุรี คดีบัญชีม้าแก๊งแจกไข่ผำฟรีหลอกลงทุนเทรดหุ้น ผู้เสียหายข้าราชการเกษียณอายุ 63 ปีสูญ 429,700 บาท ผู้ต้องหายังมีหมายจับ สน.พญาไท ความเสียหาย 1.75 ล้านบาท",
+ "generated_at": "2026-11-24T01:48:16.207Z",
+ "node_count": 13,
+ "edge_count": 12,
+ "relations": [
+  {
+   "label": "จับโดย",
+   "target_id": "30_Entities/Units/กก.5 บก.ปพ.",
+   "target_title": "กก.5 บก.ปพ.",
+   "direction": "out"
+  },
+  {
+   "label": "สั่งการโดย",
+   "target_id": "30_Entities/Units/บช.ก.",
+   "target_title": "บช.ก.",
+   "direction": "out"
+  },
+  {
+   "label": "หมายจากศาล",
+   "target_id": "30_Entities/Units/ศาลจังหวัดนนทบุรี",
+   "target_title": "ศาลจังหวัดนนทบุรี",
+   "direction": "out"
+  },
+  {
+   "label": "แจ้งโดย",
+   "target_id": "30_Entities/Units/สภ.บางบัวทอง",
+   "target_title": "สภ.บางบัวทอง",
+   "direction": "out"
+  },
+  {
+   "label": "แจ้งโดย",
+   "target_id": "30_Entities/Units/สน.พญาไท",
+   "target_title": "สน.พญาไท",
+   "direction": "out"
+  },
+  {
+   "label": "เกิดที่",
+   "target_id": "30_Entities/Places/ต.ประชาธิปัตย์ อ.ธัญบุรี จ.ปทุมธานี",
+   "target_title": "ต.ประชาธิปัตย์ อ.ธัญบุรี จ.ปทุมธานี",
+   "direction": "out"
+  },
+  {
+   "label": "เกี่ยวข้องกับบุคคล",
+   "target_id": "30_Entities/บุคคล/ณัฐศักดิ์ เชาวนาศัย",
+   "target_title": "ณัฐศักดิ์ เชาวนาศัย",
+   "direction": "out"
+  },
+  {
+   "label": "เกี่ยวข้องกับบุคคล",
+   "target_id": "30_Entities/บุคคล/อรุณ วชิรศรีสุกัญยา",
+   "target_title": "อรุณ วชิรศรีสุกัญยา",
+   "direction": "out"
+  },
+  {
+   "label": "เกี่ยวข้องกับบุคคล",
+   "target_id": "30_Entities/บุคคล/บุญลือ ผดุงถิ่น",
+   "target_title": "บุญลือ ผดุงถิ่น",
+   "direction": "out"
+  },
+  {
+   "label": "เกี่ยวข้องกับบุคคล",
+   "target_id": "30_Entities/บุคคล/ชัยฏิภูมิ อำนวยชัย",
+   "target_title": "ชัยฏิภูมิ อำนวยชัย",
+   "direction": "out"
+  },
+  {
+   "label": "เกี่ยวข้องกับบุคคล",
+   "target_id": "30_Entities/บุคคล/ภาณุมาศ รอง",
+   "target_title": "ภาณุมาศ รอง",
+   "direction": "out"
+  },
+  {
+   "label": "ประเภท",
+   "target_id": "40_CrimeTypes/อาชญากรรมไซเบอร์และออนไลน์",
+   "target_title": "อาชญากรรมไซเบอร์และออนไลน์",
+   "direction": "out"
+  }
+ ],
+ "svg": "graphs/20261123-cyber-line-01.svg"
+}

@@ -250,6 +250,14 @@
     {
      "name": "Bangkok Post",
      "url": "https://www.bangkokpost.com/thailand/general/3359460/four-arrested-over-nominee-scheme"
+    },
+    {
+     "name": "สยามนิวส์",
+     "url": "https://www.siamnews.com/news/crime/57939"
+    },
+    {
+     "name": "Sondhi Talk",
+     "url": "https://sondhitalk.com/detail/9690000111541"
     }
    ],
    "actions_public": [
@@ -322,6 +330,14 @@
     {
      "name": "Bangkok Post",
      "url": "https://www.bangkokpost.com/thailand/general/3359460/four-arrested-over-nominee-scheme"
+    },
+    {
+     "name": "สยามนิวส์",
+     "url": "https://www.siamnews.com/news/crime/57939"
+    },
+    {
+     "name": "Sondhi Talk",
+     "url": "https://sondhitalk.com/detail/9690000111541"
     }
    ],
    "tags": [
@@ -1732,6 +1748,10 @@
     {
      "name": "ไทยโพสต์",
      "url": "https://www.thaipost.net/criminality-news/1113592/"
+    },
+    {
+     "name": "สยามรัฐ",
+     "url": "https://siamrath.co.th/crime/337281"
     }
    ],
    "actions_public": [
@@ -1779,6 +1799,10 @@
     {
      "name": "ไทยโพสต์",
      "url": "https://www.thaipost.net/criminality-news/1113592/"
+    },
+    {
+     "name": "สยามรัฐ",
+     "url": "https://siamrath.co.th/crime/337281"
     }
    ],
    "tags": [

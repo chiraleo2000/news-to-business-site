@@ -1,0 +1,46 @@
+{
+ "case_id": "20261123-drug-line-01",
+ "title": "อัยการสำนักงานการสอบสวนประชุมร่วมตำรวจ ปส. และ บช.น. ออกหมายเรียกพยานครั้งที่ 2 หญิงที่สื่อเรียกว่าแอร์มีนา หลังไม่มาตามหมายแรก ย้ำเป็นพยานไม่ใช่ผู้ต้องหา ขยายผลคดีขนเฮโรอีนข้ามไปออสเตรเลีย ผู้ต้องหาถูกฟ้องแล้ว 3 ราย ยังหนีหมายจับ 1 ราย",
+ "generated_at": "2026-11-24T01:48:16.207Z",
+ "node_count": 7,
+ "edge_count": 6,
+ "relations": [
+  {
+   "label": "สั่งการโดย",
+   "target_id": "30_Entities/Units/สำนักงานอัยการสูงสุด",
+   "target_title": "สำนักงานอัยการสูงสุด",
+   "direction": "out"
+  },
+  {
+   "label": "สืบสวนโดย",
+   "target_id": "30_Entities/Units/บก.ปส.1 บช.ปส.",
+   "target_title": "บก.ปส.1 บช.ปส.",
+   "direction": "out"
+  },
+  {
+   "label": "จับโดย",
+   "target_id": "30_Entities/Units/บช.น.",
+   "target_title": "บช.น.",
+   "direction": "out"
+  },
+  {
+   "label": "เกิดที่",
+   "target_id": "30_Entities/Places/สำนักงานอัยการสูงสุด ถ.บรมราชชนนี กรุงเทพมหานคร",
+   "target_title": "สำนักงานอัยการสูงสุด ถ.บรมราชชนนี กรุงเทพมหานคร",
+   "direction": "out"
+  },
+  {
+   "label": "เกี่ยวข้องกับบุคคล",
+   "target_id": "30_Entities/บุคคล/สุรพงษ์ ชาติสุทธิ์",
+   "target_title": "สุรพงษ์ ชาติสุทธิ์",
+   "direction": "out"
+  },
+  {
+   "label": "ประเภท",
+   "target_id": "40_CrimeTypes/ยาเสพติด",
+   "target_title": "ยาเสพติด",
+   "direction": "out"
+  }
+ ],
+ "svg": "graphs/20261123-drug-line-01.svg"
+}
