@@ -788,6 +788,10 @@
     {
      "name": "BleepingComputer",
      "url": "https://www.bleepingcomputer.com/news/microsoft/n-able-says-recent-security-breach-led-to-major-service-outage/"
+    },
+    {
+     "name": "The Hacker News (Mail Assure ช่องโหว่วิกฤต)",
+     "url": "https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html"
     }
    ],
    "actions_public": [
@@ -833,6 +837,10 @@
     {
      "name": "BleepingComputer",
      "url": "https://www.bleepingcomputer.com/news/microsoft/n-able-says-recent-security-breach-led-to-major-service-outage/"
+    },
+    {
+     "name": "The Hacker News (Mail Assure ช่องโหว่วิกฤต)",
+     "url": "https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html"
     }
    ],
    "tags_struct": {
