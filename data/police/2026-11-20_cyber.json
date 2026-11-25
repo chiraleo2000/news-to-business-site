@@ -792,6 +792,10 @@
     {
      "name": "The Hacker News (Mail Assure ช่องโหว่วิกฤต)",
      "url": "https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html"
+    },
+    {
+     "name": "The Hacker News (CISA KEV 24 พ.ย.)",
+     "url": "https://thehackernews.com/2026/11/hackers-exploit-n-able-mailassure-flaw.html"
     }
    ],
    "actions_public": [
@@ -841,6 +845,10 @@
     {
      "name": "The Hacker News (Mail Assure ช่องโหว่วิกฤต)",
      "url": "https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html"
+    },
+    {
+     "name": "The Hacker News (CISA KEV 24 พ.ย.)",
+     "url": "https://thehackernews.com/2026/11/hackers-exploit-n-able-mailassure-flaw.html"
     }
    ],
    "tags_struct": {
