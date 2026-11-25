@@ -1,0 +1,64 @@
+{
+ "case_id": "20261124-drug-line-01",
+ "title": "ตำรวจภาค 4 บุกบ้านเช่า ถ.มิตรภาพ อุดรธานี จับชายอายุ 33 ปีที่รับจ้างเฝ้ายาเสพติด ยึดยาไอซ์ 716 กิโลกรัม รถ 2 คัน ก่อนลำเลียงเข้ากรุงเทพฯ ผู้ต้องหารับสารภาพ เคยเฝ้ายามาแล้ว 4-5 ครั้ง",
+ "generated_at": "2026-11-25T01:48:29.730Z",
+ "node_count": 10,
+ "edge_count": 9,
+ "relations": [
+  {
+   "label": "จับโดย",
+   "target_id": "30_Entities/Units/บก.สส.ภ.4",
+   "target_title": "บก.สส.ภ.4",
+   "direction": "out"
+  },
+  {
+   "label": "แจ้งโดย",
+   "target_id": "30_Entities/Units/ตำรวจภูธรภาค 4",
+   "target_title": "ตำรวจภูธรภาค 4",
+   "direction": "out"
+  },
+  {
+   "label": "แจ้งโดย",
+   "target_id": "30_Entities/Units/สภ.เมืองอุดรธานี",
+   "target_title": "สภ.เมืองอุดรธานี",
+   "direction": "out"
+  },
+  {
+   "label": "เกิดที่",
+   "target_id": "30_Entities/Places/บ้านเช่า ถ.มิตรภาพ ต.โนนสูง อ.เมืองอุดรธานี",
+   "target_title": "บ้านเช่า ถ.มิตรภาพ ต.โนนสูง อ.เมืองอุดรธานี",
+   "direction": "out"
+  },
+  {
+   "label": "เกี่ยวข้องกับบุคคล",
+   "target_id": "30_Entities/บุคคล/พลฑิต ไชยรส",
+   "target_title": "พลฑิต ไชยรส",
+   "direction": "out"
+  },
+  {
+   "label": "เกี่ยวข้องกับบุคคล",
+   "target_id": "30_Entities/บุคคล/สุวัฒน์ เกิดแก้ว",
+   "target_title": "สุวัฒน์ เกิดแก้ว",
+   "direction": "out"
+  },
+  {
+   "label": "แจ้งโดย",
+   "target_id": "30_Entities/บุคคล/ปราโมทย์ ฉิมหลวง",
+   "target_title": "ปราโมทย์ ฉิมหลวง",
+   "direction": "out"
+  },
+  {
+   "label": "แจ้งโดย",
+   "target_id": "30_Entities/บุคคล/พัฒนวงศ์ จันทร์พล",
+   "target_title": "พัฒนวงศ์ จันทร์พล",
+   "direction": "out"
+  },
+  {
+   "label": "ประเภท",
+   "target_id": "40_CrimeTypes/ยาเสพติด",
+   "target_title": "ยาเสพติด",
+   "direction": "out"
+  }
+ ],
+ "svg": "graphs/20261124-drug-line-01.svg"
+}

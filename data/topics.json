@@ -1,20 +1,20 @@
 ﻿{
-    "generated_at":  "2026-11-24T20:30:38.4874117+07:00",
+    "generated_at":  "2026-11-25T10:54:41.8471773+07:00",
     "topics":  [
                    {
                        "id":  "ai",
                        "label":  "AI News",
-                       "count":  1005
+                       "count":  1021
                    },
                    {
                        "id":  "gov",
                        "label":  "Gov News",
-                       "count":  484
+                       "count":  482
                    },
                    {
                        "id":  "police",
                        "label":  "Police",
-                       "count":  827
+                       "count":  850
                    },
                    {
                        "id":  "tech-law",
