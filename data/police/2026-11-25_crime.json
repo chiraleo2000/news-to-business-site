@@ -483,6 +483,10 @@
     {
      "name": "ไทยโพสต์",
      "url": "https://www.thaipost.net/criminality-news/1115013/"
+    },
+    {
+     "name": "Head Topics",
+     "url": "https://th.headtopics.com/news/39361036363658354500-90157644"
     }
    ],
    "actions_public": [
@@ -546,6 +550,10 @@
     {
      "name": "ไทยโพสต์",
      "url": "https://www.thaipost.net/criminality-news/1115013/"
+    },
+    {
+     "name": "Head Topics",
+     "url": "https://th.headtopics.com/news/39361036363658354500-90157644"
     }
    ],
    "tags": [
@@ -822,6 +830,14 @@
     {
      "name": "Thai Rath English",
      "url": "https://en.thairath.co.th/news/crime/2974326"
+    },
+    {
+     "name": "สยามรัฐ",
+     "url": "https://siamrath.co.th/regional/337882"
+    },
+    {
+     "name": "ไทยรัฐ",
+     "url": "https://thairath.co.th/news/crime/2974559"
     }
    ],
    "actions_public": [
@@ -880,6 +896,14 @@
     {
      "name": "Thai Rath English",
      "url": "https://en.thairath.co.th/news/crime/2974326"
+    },
+    {
+     "name": "สยามรัฐ",
+     "url": "https://siamrath.co.th/regional/337882"
+    },
+    {
+     "name": "ไทยรัฐ",
+     "url": "https://thairath.co.th/news/crime/2974559"
     }
    ],
    "tags": [

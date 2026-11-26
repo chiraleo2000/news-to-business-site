@@ -1,0 +1,88 @@
+{
+ "case_id": "20261125-tourist-line-01",
+ "title": "ตม.ระนอง ร่วมชุดสืบสวน บก.ตม.6 สกัดจับนักท่องเที่ยวอังกฤษอายุ 24 ปีที่ท่าเทียบเรือแกรนด์อันดามัน ตามหมายจับศาลจังหวัดภูเก็ต คดีจำหน่ายช่อดอกกัญชา พบอยู่เกินกำหนดอนุญาต",
+ "generated_at": "2026-11-26T01:49:06.264Z",
+ "node_count": 14,
+ "edge_count": 13,
+ "relations": [
+  {
+   "label": "จับโดย",
+   "target_id": "30_Entities/Units/ตม.จว.ระนอง",
+   "target_title": "ตม.จว.ระนอง",
+   "direction": "out"
+  },
+  {
+   "label": "สั่งการโดย",
+   "target_id": "30_Entities/Units/กองบังคับการตรวจคนเข้าเมือง 6 (บก.ตม.6)",
+   "target_title": "กองบังคับการตรวจคนเข้าเมือง 6 (บก.ตม.6)",
+   "direction": "out"
+  },
+  {
+   "label": "สั่งการโดย",
+   "target_id": "30_Entities/Units/ตม.",
+   "target_title": "ตม.",
+   "direction": "out"
+  },
+  {
+   "label": "สืบสวนโดย",
+   "target_id": "30_Entities/Units/ตำรวจภูธรจังหวัดระนอง",
+   "target_title": "ตำรวจภูธรจังหวัดระนอง",
+   "direction": "out"
+  },
+  {
+   "label": "แจ้งโดย",
+   "target_id": "30_Entities/Units/สภ.เมืองภูเก็ต",
+   "target_title": "สภ.เมืองภูเก็ต",
+   "direction": "out"
+  },
+  {
+   "label": "หมายจากศาล",
+   "target_id": "30_Entities/Units/ศาลจังหวัดภูเก็ต",
+   "target_title": "ศาลจังหวัดภูเก็ต",
+   "direction": "out"
+  },
+  {
+   "label": "เกิดที่",
+   "target_id": "30_Entities/Places/ท่าเทียบเรือบริษัทแกรนด์อันดามัน จ.ระนอง",
+   "target_title": "ท่าเทียบเรือบริษัทแกรนด์อันดามัน จ.ระนอง",
+   "direction": "out"
+  },
+  {
+   "label": "แจ้งโดย",
+   "target_id": "30_Entities/บุคคล/เจริญพงษ์ ขันติโล",
+   "target_title": "เจริญพงษ์ ขันติโล",
+   "direction": "out"
+  },
+  {
+   "label": "สั่งการโดย",
+   "target_id": "30_Entities/บุคคล/นพศิลป์ พูลสวัสดิ์",
+   "target_title": "นพศิลป์ พูลสวัสดิ์",
+   "direction": "out"
+  },
+  {
+   "label": "สั่งการโดย",
+   "target_id": "30_Entities/บุคคล/ชูธเรศ ยิ่งยงดำรงสกุล",
+   "target_title": "ชูธเรศ ยิ่งยงดำรงสกุล",
+   "direction": "out"
+  },
+  {
+   "label": "สั่งการโดย",
+   "target_id": "30_Entities/บุคคล/เด่นชาย เจริญยุทธ",
+   "target_title": "เด่นชาย เจริญยุทธ",
+   "direction": "out"
+  },
+  {
+   "label": "สั่งการโดย",
+   "target_id": "30_Entities/บุคคล/ปวิช อุราสาย",
+   "target_title": "ปวิช อุราสาย",
+   "direction": "out"
+  },
+  {
+   "label": "ประเภท",
+   "target_id": "40_CrimeTypes/อาชญากรรมที่เกี่ยวข้องกับนักท่องเที่ยวและชาวต่างชาติ",
+   "target_title": "อาชญากรรมที่เกี่ยวข้องกับนักท่องเที่ยวและชาวต่างชาติ",
+   "direction": "out"
+  }
+ ],
+ "svg": "graphs/20261125-tourist-line-01.svg"
+}

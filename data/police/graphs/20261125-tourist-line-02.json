@@ -1,0 +1,46 @@
+{
+ "case_id": "20261125-tourist-line-02",
+ "title": "ตม.เบตง ตรวจบ้านเช่า 2 ชั้นในอำเภอเบตง จับหญิงสัญชาติลาวที่อยู่เกินกำหนดอนุญาต 238 วัน ส่งพนักงานสอบสวนและเตรียมผลักดันออกนอกประเทศ บก.ตม.6 ย้ำเจ้าของที่พักต้องแจ้งการพัก",
+ "generated_at": "2026-11-26T01:49:06.264Z",
+ "node_count": 7,
+ "edge_count": 6,
+ "relations": [
+  {
+   "label": "จับโดย",
+   "target_id": "30_Entities/Units/ด่าน ตม.เบตง",
+   "target_title": "ด่าน ตม.เบตง",
+   "direction": "out"
+  },
+  {
+   "label": "สั่งการโดย",
+   "target_id": "30_Entities/Units/กองบังคับการตรวจคนเข้าเมือง 6 (บก.ตม.6)",
+   "target_title": "กองบังคับการตรวจคนเข้าเมือง 6 (บก.ตม.6)",
+   "direction": "out"
+  },
+  {
+   "label": "สั่งการโดย",
+   "target_id": "30_Entities/Units/ตม.",
+   "target_title": "ตม.",
+   "direction": "out"
+  },
+  {
+   "label": "เกิดที่",
+   "target_id": "30_Entities/Places/ต.เบตง อ.เบตง จ.ยะลา",
+   "target_title": "ต.เบตง อ.เบตง จ.ยะลา",
+   "direction": "out"
+  },
+  {
+   "label": "เกี่ยวข้องกับบุคคล",
+   "target_id": "30_Entities/บุคคล/กฤตกรอิชณน์ คงขำ",
+   "target_title": "กฤตกรอิชณน์ คงขำ",
+   "direction": "out"
+  },
+  {
+   "label": "ประเภท",
+   "target_id": "40_CrimeTypes/อาชญากรรมที่เกี่ยวข้องกับนักท่องเที่ยวและชาวต่างชาติ",
+   "target_title": "อาชญากรรมที่เกี่ยวข้องกับนักท่องเที่ยวและชาวต่างชาติ",
+   "direction": "out"
+  }
+ ],
+ "svg": "graphs/20261125-tourist-line-02.svg"
+}
