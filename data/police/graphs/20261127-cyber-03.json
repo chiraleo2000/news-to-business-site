@@ -1,14 +1,14 @@
 {
  "case_id": "20261127-cyber-03",
  "title": "ThaiCERT เตือนช่องโหว่ SQL Injection CVE-2026-82981 (CVSS v4.0 8.7) ในระบบ WHMCS ของผู้ให้บริการเว็บโฮสติง ผู้โจมตีไม่ต้องล็อกอินก็อาจดึงข้อมูลลูกค้าและค่าแฮชรหัสผ่านผู้ดูแลได้ แนะอัปเดต 9.0.10 / 9.1.2",
- "generated_at": "2026-11-27T06:13:50.288Z",
+ "generated_at": "2026-11-28T06:14:35.942Z",
  "node_count": 5,
  "edge_count": 4,
  "relations": [
   {
    "label": "แจ้งโดย",
-   "target_id": "30_Entities/Units/ThaiCERT (สกมช.)",
-   "target_title": "ThaiCERT (สกมช.)",
+   "target_id": "30_Entities/Units/ThaiCERT",
+   "target_title": "ThaiCERT",
    "direction": "out"
   },
   {

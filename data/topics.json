@@ -1,5 +1,5 @@
 ﻿{
-    "generated_at":  "2026-11-28T10:38:36.7728096+07:00",
+    "generated_at":  "2026-11-28T14:00:49.8233309+07:00",
     "topics":  [
                    {
                        "id":  "ai",
@@ -19,7 +19,7 @@
                    {
                        "id":  "tech-law",
                        "label":  "Tech Law",
-                       "count":  43
+                       "count":  44
                    }
                ]
 }

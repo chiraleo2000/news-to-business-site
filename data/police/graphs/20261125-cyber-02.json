@@ -1,14 +1,14 @@
 {
  "case_id": "20261125-cyber-02",
  "title": "ThaiCERT เตือนช่องโหว่ระดับ Critical CVE-2026-134814 ในไลบรารี binary-parser ของ Node.js ก่อนเวอร์ชัน 2.3.1 ผู้โจมตีที่กำหนดโครงสร้างตัวแปลงข้อมูลได้อาจแทรกโค้ดและยึดเซิร์ฟเวอร์ แนะนำอัปเดตทันที",
- "generated_at": "2026-11-25T06:13:48.916Z",
+ "generated_at": "2026-11-28T06:14:35.942Z",
  "node_count": 4,
  "edge_count": 3,
  "relations": [
   {
    "label": "แจ้งโดย",
-   "target_id": "30_Entities/Units/ThaiCERT (สกมช.)",
-   "target_title": "ThaiCERT (สกมช.)",
+   "target_id": "30_Entities/Units/ThaiCERT",
+   "target_title": "ThaiCERT",
    "direction": "out"
   },
   {

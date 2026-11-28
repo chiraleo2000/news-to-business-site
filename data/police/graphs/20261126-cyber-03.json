@@ -1,14 +1,14 @@
 {
  "case_id": "20261126-cyber-03",
  "title": "ThaiCERT เตือนช่องโหว่ระดับ Critical CVE-2026-134624 (CVSS 9.3) ใน N-able Mail Assure และ SpamExperts ผู้มีบัญชี API สิทธิ์สูงอาจสั่งเซิร์ฟเวอร์กรองอีเมลเชื่อมต่อเข้าระบบภายในองค์กร แนะอัปเดต Build 20261121.1943",
- "generated_at": "2026-11-26T06:17:21.465Z",
+ "generated_at": "2026-11-28T06:14:35.942Z",
  "node_count": 5,
  "edge_count": 4,
  "relations": [
   {
    "label": "แจ้งโดย",
-   "target_id": "30_Entities/Units/ThaiCERT (สกมช.)",
-   "target_title": "ThaiCERT (สกมช.)",
+   "target_id": "30_Entities/Units/ThaiCERT",
+   "target_title": "ThaiCERT",
    "direction": "out"
   },
   {

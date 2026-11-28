@@ -1,9 +1,9 @@
 {
  "case_id": "20261126-cyber-05",
  "title": "ทีมความปลอดภัย Drupal ยืนยันช่องโหว่วิกฤต CVE-2026-132165 (Fail2Install) ในตัวติดตั้ง install.php ถูกใช้ยึดเว็บไซต์จริงตั้งแต่ 19 พ.ย. 2569 CISA สั่งหน่วยงานรัฐบาลกลางแก้ภายใน 27 พ.ย.",
- "generated_at": "2026-11-26T06:17:21.465Z",
- "node_count": 6,
- "edge_count": 5,
+ "generated_at": "2026-11-28T06:14:35.942Z",
+ "node_count": 7,
+ "edge_count": 6,
  "relations": [
   {
    "label": "แจ้งโดย",
@@ -28,6 +28,12 @@
    "target_id": "30_Entities/Places/ทั่วโลก",
    "target_title": "ทั่วโลก",
    "direction": "out"
+  },
+  {
+   "label": "ติดตามจาก",
+   "target_id": "20_Cases/20261128-cyber-06",
+   "target_title": "Drupal เตือนช่องโหว่ยึดเว็บไซต์ตัวที่สอง CVE-2026-136716 ถูกใช้โจมตีจริง ปิดช่องทางที่แพตช์ Fail2Install ยังไม่ครอบคลุม CISA เพิ่มเข้า KEV 27 พ.ย. 2569 แนะอัปเดต 10.6.23 / 11.3.23 / 11.4.14",
+   "direction": "in"
   },
   {
    "label": "ประเภท",

@@ -1,14 +1,14 @@
 {
  "case_id": "20261125-cyber-03",
  "title": "ThaiCERT แนะอัปเดต Google Chrome ด่วน หลัง Google แก้ช่องโหว่ CVE-2026-134401 (CVSS 9.6) ในองค์ประกอบ Variations กระทบ Windows macOS และ Linux",
- "generated_at": "2026-11-25T06:13:48.916Z",
+ "generated_at": "2026-11-28T06:14:35.942Z",
  "node_count": 5,
  "edge_count": 4,
  "relations": [
   {
    "label": "แจ้งโดย",
-   "target_id": "30_Entities/Units/ThaiCERT (สกมช.)",
-   "target_title": "ThaiCERT (สกมช.)",
+   "target_id": "30_Entities/Units/ThaiCERT",
+   "target_title": "ThaiCERT",
    "direction": "out"
   },
   {
