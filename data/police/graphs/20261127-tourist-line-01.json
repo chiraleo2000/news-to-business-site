@@ -1,0 +1,58 @@
+{
+ "case_id": "20261127-tourist-line-01",
+ "title": "ตม.จว.กาญจนบุรี สนธิกำลังตรวจที่พักคนงานซอยยิ่งเจริญทรัพย์ 1 จับต่างด้าว 39 ราย เข้าเมืองผิดกฎหมาย อยู่เกินกำหนด และไม่แจ้งที่พัก พร้อมดำเนินคดีคนไทยผู้ให้ที่พัก",
+ "generated_at": "2026-11-28T02:22:06.008Z",
+ "node_count": 9,
+ "edge_count": 8,
+ "relations": [
+  {
+   "label": "จับโดย",
+   "target_id": "30_Entities/Units/ตม.จว.กาญจนบุรี",
+   "target_title": "ตม.จว.กาญจนบุรี",
+   "direction": "out"
+  },
+  {
+   "label": "จับโดย",
+   "target_id": "30_Entities/Units/กก.5 บก.ปคม.",
+   "target_title": "กก.5 บก.ปคม.",
+   "direction": "out"
+  },
+  {
+   "label": "สั่งการโดย",
+   "target_id": "30_Entities/Units/กองบังคับการตรวจคนเข้าเมือง 3 (บก.ตม.3)",
+   "target_title": "กองบังคับการตรวจคนเข้าเมือง 3 (บก.ตม.3)",
+   "direction": "out"
+  },
+  {
+   "label": "สั่งการโดย",
+   "target_id": "30_Entities/Units/ตม.",
+   "target_title": "ตม.",
+   "direction": "out"
+  },
+  {
+   "label": "แจ้งโดย",
+   "target_id": "30_Entities/Units/สภ.เมืองกาญจนบุรี",
+   "target_title": "สภ.เมืองกาญจนบุรี",
+   "direction": "out"
+  },
+  {
+   "label": "เกิดที่",
+   "target_id": "30_Entities/Places/ซอยยิ่งเจริญทรัพย์ 1 ต.ปากแพรก อ.เมือง จ.กาญจนบุรี",
+   "target_title": "ซอยยิ่งเจริญทรัพย์ 1 ต.ปากแพรก อ.เมือง จ.กาญจนบุรี",
+   "direction": "out"
+  },
+  {
+   "label": "แจ้งโดย",
+   "target_id": "30_Entities/บุคคล/ทรงโปรด สิริสุขะ",
+   "target_title": "ทรงโปรด สิริสุขะ",
+   "direction": "out"
+  },
+  {
+   "label": "ประเภท",
+   "target_id": "40_CrimeTypes/อาชญากรรมที่เกี่ยวข้องกับนักท่องเที่ยวและชาวต่างชาติ",
+   "target_title": "อาชญากรรมที่เกี่ยวข้องกับนักท่องเที่ยวและชาวต่างชาติ",
+   "direction": "out"
+  }
+ ],
+ "svg": "graphs/20261127-tourist-line-01.svg"
+}

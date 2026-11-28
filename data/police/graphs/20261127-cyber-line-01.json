@@ -1,0 +1,76 @@
+{
+ "case_id": "20261127-cyber-line-01",
+ "title": "ตม.จว.หนองคาย จับหญิงชาว อ.ชนแดน จ.เพชรบูรณ์ ตามหมายจับศาลจังหวัดกำแพงเพชร คดีนำเข้าข้อมูลคอมพิวเตอร์ปลอมและฉ้อโกงที่เกี่ยวกับบัญชีม้า หลังประสาน สภ.ปางศิลาทอง",
+ "generated_at": "2026-11-28T02:22:06.008Z",
+ "node_count": 12,
+ "edge_count": 11,
+ "relations": [
+  {
+   "label": "จับโดย",
+   "target_id": "30_Entities/Units/ตม.จว.หนองคาย",
+   "target_title": "ตม.จว.หนองคาย",
+   "direction": "out"
+  },
+  {
+   "label": "สั่งการโดย",
+   "target_id": "30_Entities/Units/กองบังคับการตรวจคนเข้าเมือง 4 (บก.ตม.4)",
+   "target_title": "กองบังคับการตรวจคนเข้าเมือง 4 (บก.ตม.4)",
+   "direction": "out"
+  },
+  {
+   "label": "สั่งการโดย",
+   "target_id": "30_Entities/Units/ตม.",
+   "target_title": "ตม.",
+   "direction": "out"
+  },
+  {
+   "label": "แจ้งโดย",
+   "target_id": "30_Entities/Units/สภ.ปางศิลาทอง",
+   "target_title": "สภ.ปางศิลาทอง",
+   "direction": "out"
+  },
+  {
+   "label": "หมายจากศาล",
+   "target_id": "30_Entities/Units/ศาลจังหวัดกำแพงเพชร",
+   "target_title": "ศาลจังหวัดกำแพงเพชร",
+   "direction": "out"
+  },
+  {
+   "label": "เกิดที่",
+   "target_id": "30_Entities/Places/หน้าร้านสะดวกซื้อ ปั๊ม ปตท. หน้าด่าน จ.หนองคาย",
+   "target_title": "หน้าร้านสะดวกซื้อ ปั๊ม ปตท. หน้าด่าน จ.หนองคาย",
+   "direction": "out"
+  },
+  {
+   "label": "เกี่ยวข้องกับบุคคล",
+   "target_id": "30_Entities/บุคคล/ธียาณพัฒท์ รังสิพราหมณกุล",
+   "target_title": "ธียาณพัฒท์ รังสิพราหมณกุล",
+   "direction": "out"
+  },
+  {
+   "label": "เกี่ยวข้องกับบุคคล",
+   "target_id": "30_Entities/บุคคล/อภิชาติ คลธา",
+   "target_title": "อภิชาติ คลธา",
+   "direction": "out"
+  },
+  {
+   "label": "เกี่ยวข้องกับบุคคล",
+   "target_id": "30_Entities/บุคคล/สุวิน มั่นคง",
+   "target_title": "สุวิน มั่นคง",
+   "direction": "out"
+  },
+  {
+   "label": "เกี่ยวข้องกับบุคคล",
+   "target_id": "30_Entities/บุคคล/นพศิลป์ พูลสวัสดิ์",
+   "target_title": "นพศิลป์ พูลสวัสดิ์",
+   "direction": "out"
+  },
+  {
+   "label": "ประเภท",
+   "target_id": "40_CrimeTypes/อาชญากรรมไซเบอร์และออนไลน์",
+   "target_title": "อาชญากรรมไซเบอร์และออนไลน์",
+   "direction": "out"
+  }
+ ],
+ "svg": "graphs/20261127-cyber-line-01.svg"
+}

@@ -1,0 +1,52 @@
+{
+ "case_id": "20261127-tourist-line-02",
+ "title": "ตม.จว.ปัตตานี บูรณาการจัดหางานจังหวัด จับหมอนวดหญิงชาวเมียนมาอายุ 50 ปี รับนวดที่บ้านพักใน ต.สะบารัง ข้อหาต่างด้าวทำงานนอกเหนือสิทธิ ตามคำสั่งของ ผบช.สตม.",
+ "generated_at": "2026-11-28T02:22:06.008Z",
+ "node_count": 8,
+ "edge_count": 7,
+ "relations": [
+  {
+   "label": "จับโดย",
+   "target_id": "30_Entities/Units/ตม.จว.ปัตตานี",
+   "target_title": "ตม.จว.ปัตตานี",
+   "direction": "out"
+  },
+  {
+   "label": "สั่งการโดย",
+   "target_id": "30_Entities/Units/กองบังคับการตรวจคนเข้าเมือง 6 (บก.ตม.6)",
+   "target_title": "กองบังคับการตรวจคนเข้าเมือง 6 (บก.ตม.6)",
+   "direction": "out"
+  },
+  {
+   "label": "สั่งการโดย",
+   "target_id": "30_Entities/Units/ตม.",
+   "target_title": "ตม.",
+   "direction": "out"
+  },
+  {
+   "label": "เกิดที่",
+   "target_id": "30_Entities/Places/บ้านพัก ต.สะบารัง อ.เมือง จ.ปัตตานี",
+   "target_title": "บ้านพัก ต.สะบารัง อ.เมือง จ.ปัตตานี",
+   "direction": "out"
+  },
+  {
+   "label": "สั่งการโดย",
+   "target_id": "30_Entities/บุคคล/เจริญพงษ์ ขันติโล",
+   "target_title": "เจริญพงษ์ ขันติโล",
+   "direction": "out"
+  },
+  {
+   "label": "สั่งการโดย",
+   "target_id": "30_Entities/บุคคล/นพศิลป์ พูลสวัสดิ์",
+   "target_title": "นพศิลป์ พูลสวัสดิ์",
+   "direction": "out"
+  },
+  {
+   "label": "ประเภท",
+   "target_id": "40_CrimeTypes/อาชญากรรมที่เกี่ยวข้องกับนักท่องเที่ยวและชาวต่างชาติ",
+   "target_title": "อาชญากรรมที่เกี่ยวข้องกับนักท่องเที่ยวและชาวต่างชาติ",
+   "direction": "out"
+  }
+ ],
+ "svg": "graphs/20261127-tourist-line-02.svg"
+}
